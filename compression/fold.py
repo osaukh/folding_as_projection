@@ -2,14 +2,15 @@ import torch
 import torch.nn as nn
 from collections import defaultdict
 
-from utils.weight_clustering import WeightClustering, _log_cluster_stats, concat_weights
+from models.resnet18 import get_module_by_name_ResNet18, get_axis_to_perm_ResNet18
+from utils.weight_clustering import WeightClustering, _log_cluster_stats, concat_weights, axes2perm_to_perm2axes
 
 from compression.base_clip_vit import BaseCLIPViTCompression
 from compression.base_resnet import BaseResNet18Compression
 
 
 class ResNet18_ModelFolding(BaseResNet18Compression):
-    def compress_or_prune(self, axes, params):
+    def compress_function(self, axes, params):
         """
         Folding logic: perform clustering and merge weights.
         """
@@ -38,6 +39,37 @@ class ResNet18_ModelFolding(BaseResNet18Compression):
         compressed_params = merge_channel_clustering({0: axes}, params, 0, merge_matrix, custom_merger=NopMerge())
 
         return compressed_params, {'cluster_labels': labels}
+
+    def apply(self):
+        print(f"[INFO] Starting {self.__class__.__name__}...")
+        axis_to_perm = get_axis_to_perm_ResNet18(override=False)
+        perm_to_axes = axes2perm_to_perm2axes(axis_to_perm)
+
+        for perm_id, axes in perm_to_axes.items():
+            # --- Collect raw params ---
+            raw_params = {}
+            for module_name, axis in axes:
+                module = get_module_by_name_ResNet18(self.model, module_name)
+                weight = module.weight.data if hasattr(module, 'weight') else module.data
+                raw_params[module_name] = weight
+
+            # --- Call specific compression/pruning logic ---
+            compressed_params, meta = self.compress_function(axes, raw_params)
+
+            # --- Rebuild modules ---
+            param_groups = defaultdict(dict)
+            for full_name, tensor in compressed_params.items():
+                module_name, pname = full_name.rsplit('.', 1)
+                param_groups[module_name][pname] = tensor
+
+            for module_name, param_dict in param_groups.items():
+                module = get_module_by_name_ResNet18(self.model, module_name)
+                cluster_labels = meta.get('cluster_labels') if meta else None
+                n_clusters = param_dict['weight'].shape[0]
+                new_module = self._rebuild_module(module, param_dict, cluster_labels, n_clusters)
+                self._replace(module_name, new_module)
+
+        return self.model
 
 
 

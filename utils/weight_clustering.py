@@ -114,57 +114,57 @@ class WeightClustering:
         return merge
 
 
-def compress_weight_clustering(perm_to_axes, params, max_ratio=0.5, custom_merger=None):
-    if custom_merger is None:
-        custom_merger = NopMerge()
-
-    new_merge_sizes = {}
-
-    for p_name, axes in perm_to_axes.items():
-        # Original channel count
-        n_channels = params[axes[0][0]].shape[axes[0][1]]
-        n_clusters = max(int(n_channels * max_ratio), 1)
-
-        # Flatten weights for clustering
-        weight = concat_weights(perm_to_axes, params, p_name, n_channels)
-
-        # Cluster → binary merge matrix or labels
-        clusterer = WeightClustering(n_clusters=n_clusters, n_features=n_channels, method="hkmeans",
-                                     normalize=False, use_pca=True)
-        merge = clusterer(weight)
-
-        # *** Ensure same device as params ***
-        param_device = params[axes[0][0]].device
-        merge = merge.to(param_device)
-
-        # Convert labels → binary merge matrix
-        if merge.ndim == 1:
-            labels = merge.to(param_device).long()
-            num_clusters = labels.max().item() + 1
-
-            # *** Log cluster stats here ***
-            _log_cluster_stats(weight, labels, p_name)
-
-            merge_matrix = torch.zeros((num_clusters, labels.shape[0]),
-                                       device=param_device,
-                                       dtype=torch.float32)
-            merge_matrix.scatter_(0, labels.unsqueeze(0), 1.0)
-            merge_matrix /= merge_matrix.sum(dim=1, keepdim=True).clamp(min=1)
-            merge = merge_matrix
-        else:
-            merge = merge.to(torch.float32)
-
-        # Apply folding
-        prm = merge_channel_clustering(perm_to_axes, params, p_name, merge, custom_merger)
-
-        # Update params
-        for wk, axis in axes:
-            params[wk] = prm[wk]
-
-        # Record new size
-        new_merge_sizes[p_name] = params[axes[0][0]].shape[axes[0][1]]
-
-    return params, new_merge_sizes
+# def compress_weight_clustering(perm_to_axes, params, max_ratio=0.5, custom_merger=None):
+#     if custom_merger is None:
+#         custom_merger = NopMerge()
+#
+#     new_merge_sizes = {}
+#
+#     for p_name, axes in perm_to_axes.items():
+#         # Original channel count
+#         n_channels = params[axes[0][0]].shape[axes[0][1]]
+#         n_clusters = max(int(n_channels * max_ratio), 1)
+#
+#         # Flatten weights for clustering
+#         weight = concat_weights(perm_to_axes, params, p_name, n_channels)
+#
+#         # Cluster → binary merge matrix or labels
+#         clusterer = WeightClustering(n_clusters=n_clusters, n_features=n_channels, method="hkmeans",
+#                                      normalize=False, use_pca=True)
+#         merge = clusterer(weight)
+#
+#         # *** Ensure same device as params ***
+#         param_device = params[axes[0][0]].device
+#         merge = merge.to(param_device)
+#
+#         # Convert labels → binary merge matrix
+#         if merge.ndim == 1:
+#             labels = merge.to(param_device).long()
+#             num_clusters = labels.max().item() + 1
+#
+#             # *** Log cluster stats here ***
+#             _log_cluster_stats(weight, labels, p_name)
+#
+#             merge_matrix = torch.zeros((num_clusters, labels.shape[0]),
+#                                        device=param_device,
+#                                        dtype=torch.float32)
+#             merge_matrix.scatter_(0, labels.unsqueeze(0), 1.0)
+#             merge_matrix /= merge_matrix.sum(dim=1, keepdim=True).clamp(min=1)
+#             merge = merge_matrix
+#         else:
+#             merge = merge.to(torch.float32)
+#
+#         # Apply folding
+#         prm = merge_channel_clustering(perm_to_axes, params, p_name, merge, custom_merger)
+#
+#         # Update params
+#         for wk, axis in axes:
+#             params[wk] = prm[wk]
+#
+#         # Record new size
+#         new_merge_sizes[p_name] = params[axes[0][0]].shape[axes[0][1]]
+#
+#     return params, new_merge_sizes
 
 
 def get_average_correlation(merge, w):

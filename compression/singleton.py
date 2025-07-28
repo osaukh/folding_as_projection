@@ -1,158 +1,42 @@
 import torch
-import torch.nn as nn
-from collections import defaultdict
-from models.resnet18 import get_axis_to_perm_ResNet18, get_module_by_name_ResNet18
-from utils.weight_clustering import axes2perm_to_perm2axes, compress_weight_clustering
+from utils.weight_clustering import merge_channel_clustering, NopMerge, _log_cluster_stats
+from compression.fold import ResNet18_ModelFolding
 
+class ResNet18_Singleton(ResNet18_ModelFolding):
+    def compress_function(self, axes, params):
+        """
+        Singleton folding:
+        - Top (k-1) channels (highest L2 norm) form singleton clusters.
+        - Remaining channels grouped into one cluster.
+        """
+        # Number of channels and clusters
+        n_channels = params[axes[0][0]].shape[axes[0][1]]
+        n_clusters = max(int(n_channels * self.keep_ratio), 1)
 
-class ResNet18_Singleton:
-    def __init__(self, model, min_channels=1, compression_ratio=0.5):
-        print(f"[DEBUG] SingletonFolding with compression_ratio={compression_ratio}, min_channels={min_channels}")
-        self.model = model
-        self.min_channels = min_channels
-        self.compression_ratio = 1.0 - compression_ratio
-        self.device = next(model.parameters()).device
+        # Compute per-channel L2 norm (flatten along remaining dimensions)
+        weight = params[axes[0][0]]
+        magnitudes = torch.norm(weight.view(n_channels, -1), p=2, dim=1)
 
-        self._rename_layers(self.model)
+        # Get indices of top (k-1) channels
+        if n_clusters > 1:
+            topk = torch.topk(magnitudes, n_clusters - 1, largest=True).indices
+        else:
+            topk = torch.tensor([], device=self.device, dtype=torch.long)
 
-    def _rename_layers(self, model):
-        for name, module in model.named_modules():
-            if not hasattr(model, '_module_dict'):
-                model._module_dict = {}
-            model._module_dict[name] = module
+        # Build labels: top-k are unique, others share one cluster
+        labels = torch.full((n_channels,), n_clusters - 1, device=self.device, dtype=torch.long)
+        for idx, ch in enumerate(topk):
+            labels[ch] = idx
 
-    def _fold_bn_params(self, original_bn, cluster_labels, n_clusters):
-        device = original_bn.weight.device
-        new_bn = nn.BatchNorm2d(n_clusters).to(device)
+        # Log cluster stats
+        _log_cluster_stats(weight, labels, axes[0][0])
 
-        for param_name in ['weight', 'bias']:
-            original = getattr(original_bn, param_name).data
-            fused = torch.zeros(n_clusters, device=device)
-            for k in range(n_clusters):
-                mask = cluster_labels == k
-                if mask.sum() > 0:
-                    fused[k] = original[mask].mean()
-            setattr(new_bn, param_name, nn.Parameter(fused))
+        # Build merge matrix
+        merge_matrix = torch.zeros((n_clusters, n_channels), device=self.device)
+        merge_matrix.scatter_(0, labels.unsqueeze(0), 1.0)
+        merge_matrix /= merge_matrix.sum(dim=1, keepdim=True).clamp(min=1)
 
-        for stat_name in ['running_mean', 'running_var']:
-            original = getattr(original_bn, stat_name).data
-            fused = torch.zeros(n_clusters, device=device)
-            for k in range(n_clusters):
-                mask = cluster_labels == k
-                if mask.sum() > 0:
-                    fused[k] = original[mask].mean()
-            getattr(new_bn, stat_name).data.copy_(fused)
+        # Merge weights (folding)
+        compressed_params = merge_channel_clustering({0: axes}, params, 0, merge_matrix, custom_merger=NopMerge())
 
-        return new_bn
-
-    def _rebuild_module(self, name, old_module, param_dict, cluster_labels=None, n_clusters=None):
-        if isinstance(old_module, nn.Conv2d):
-            new_weight = param_dict.get('weight')
-            new_out_channels = new_weight.shape[0]
-            new_in_channels = new_weight.shape[1]
-            new_conv = nn.Conv2d(
-                in_channels=new_in_channels,
-                out_channels=new_out_channels,
-                kernel_size=old_module.kernel_size,
-                stride=old_module.stride,
-                padding=old_module.padding,
-                dilation=old_module.dilation,
-                groups=old_module.groups,
-                bias='bias' in param_dict,
-                padding_mode=old_module.padding_mode
-            ).to(self.device)
-            new_conv.weight.data = param_dict['weight'].clone()
-            if 'bias' in param_dict:
-                new_conv.bias.data = param_dict['bias'].clone()
-            return new_conv
-
-        elif isinstance(old_module, nn.BatchNorm2d):
-            if cluster_labels is not None and n_clusters is not None:
-                return self._fold_bn_params(old_module, cluster_labels, n_clusters)
-            else:
-                new_num_features = param_dict['weight'].shape[0]
-                new_bn = nn.BatchNorm2d(new_num_features).to(self.device)
-                for pname in ['weight', 'bias', 'running_mean', 'running_var']:
-                    if pname in param_dict:
-                        getattr(new_bn, pname).data = param_dict[pname].clone()
-                return new_bn
-
-        elif isinstance(old_module, nn.Linear):
-            new_weight = param_dict.get('weight')
-            new_out_features = new_weight.shape[0]
-            new_in_features = new_weight.shape[1]
-            new_fc = nn.Linear(new_in_features, new_out_features).to(self.device)
-            new_fc.weight.data = param_dict['weight'].clone()
-            if 'bias' in param_dict:
-                new_fc.bias.data = param_dict['bias'].clone()
-            return new_fc
-
-        return old_module
-
-    def apply(self):
-        print("Starting model folding with singleton clustering...")
-        axis_to_perm = get_axis_to_perm_ResNet18(override=False)
-        perm_to_axes = axes2perm_to_perm2axes(axis_to_perm)
-
-        for perm_id, axes in perm_to_axes.items():
-            features = []
-            raw_params = {}
-            module_offsets = {}
-            offset = 0
-
-            for module_name, axis in axes:
-                module = get_module_by_name_ResNet18(self.model, module_name)
-                weight = module.weight.data if hasattr(module, 'weight') else module.data
-                raw_params[module_name] = weight
-                weight = weight.transpose(0, axis).contiguous()
-                n_channels = weight.shape[0]
-                reshaped = weight.view(n_channels, -1)
-                features.append(reshaped)
-                module_offsets[module_name] = (offset, offset + n_channels)
-                offset += n_channels
-
-            all_features = torch.cat(features, dim=1)
-            norms = all_features.norm(dim=1)
-            n_channels = norms.shape[0]
-            n_clusters = max(int(n_channels * self.compression_ratio), self.min_channels)
-
-            if n_clusters >= n_channels:
-                clustering_results = torch.arange(n_channels, dtype=torch.int)
-            else:
-                topk = torch.topk(norms, k=n_clusters - 1, largest=True).indices
-                clustering_results = torch.full((n_channels,), fill_value=n_clusters - 1, dtype=torch.int)
-                clustering_results[topk] = torch.arange(n_clusters - 1, dtype=torch.int)
-
-                # Replace the bottom cluster with its mean
-                mask = clustering_results == (n_clusters - 1)
-                all_features[mask] = all_features[mask].mean(dim=0, keepdim=True)
-
-            # Prepare clustering results as dict
-            clustering_results_dict = {perm_id: clustering_results}
-
-            compressed_params, merge_sizes = compress_weight_clustering(
-                {perm_id: axes}, raw_params, clustering_results_dict)
-
-            param_groups = defaultdict(dict)
-            for full_name, tensor in compressed_params.items():
-                module_name, param_name = full_name.rsplit('.', 1)
-                param_groups[module_name][param_name] = tensor
-
-            for module_name, param_dict in param_groups.items():
-                module = get_module_by_name_ResNet18(self.model, module_name)
-                cluster_labels = None
-                if module_name in module_offsets:
-                    start, end = module_offsets[module_name]
-                    cluster_labels = clustering_results[start:end]
-
-                new_module = self._rebuild_module(module_name, module, param_dict, cluster_labels, n_clusters)
-
-                parent_name = '.'.join(module_name.split('.')[:-1])
-                attr_name = module_name.split('.')[-1]
-                if parent_name:
-                    parent = get_module_by_name_ResNet18(self.model, parent_name)
-                    setattr(parent, attr_name, new_module)
-                else:
-                    setattr(self.model, attr_name, new_module)
-
-        return self.model
+        return compressed_params, {'cluster_labels': labels}

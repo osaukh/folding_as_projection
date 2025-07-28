@@ -16,3 +16,4 @@
 
 ## Testing pipelines
 - `CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.eval_clip_folding`
+- `CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.eval_resnet_compression`
