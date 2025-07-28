@@ -314,29 +314,6 @@ def merge_channel_clustering_approx_repair(perm_to_axes, params, p_name, merge, 
     return params
 
 
-# def _log_cluster_stats(W_fc, labels, layer_name, max_logs=3):
-#     """Compute and log intra/inter-cluster distances (compact summary)."""
-#     num_clusters = labels.max().item() + 1
-#     centroids = []
-#     intra_dists = []
-#
-#     for k in range(num_clusters):
-#         members = (labels == k).nonzero(as_tuple=True)[0]
-#         if len(members) == 0:
-#             continue
-#         cluster_vecs = W_fc[members]
-#         centroid = cluster_vecs.mean(dim=0)
-#         centroids.append(centroid)
-#         intra_dists.append(torch.norm(cluster_vecs - centroid, dim=1).mean())
-#
-#     centroids = torch.stack(centroids)
-#     inter_dists = torch.cdist(centroids, centroids).mean()
-#
-#     if max_logs > 0:
-#         print(f"[CLUSTER-STATS] {layer_name}: "
-#               f"Clusters={num_clusters}, "
-#               f"Intra={torch.stack(intra_dists).mean().item():.3f}, "
-#               f"Inter={inter_dists.item():.3f}")
 
 def _log_cluster_stats(W_fc, labels, module_name):
     """

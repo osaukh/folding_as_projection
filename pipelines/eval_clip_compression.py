@@ -73,8 +73,8 @@ def main():
 
     # Apply folding
     print("\n[INFO] Applying CLIP ViT-B/32 model compression...")
-    # pruner = CLIPViT_ModelFolding(model, compression_ratio=COMPRESSION_RATIO)
-    pruner = CLIPViT_MagnitudePruning(model, compression_ratio=COMPRESSION_RATIO, p=1)
+    pruner = CLIPViT_ModelFolding(model, compression_ratio=COMPRESSION_RATIO)
+    # pruner = CLIPViT_MagnitudePruning(model, compression_ratio=COMPRESSION_RATIO, p=2)
     # pruner = CLIPViT_RandomFolding(model, compression_ratio=COMPRESSION_RATIO)
     # pruner = CLIPViT_RandomPruning(model, compression_ratio=COMPRESSION_RATIO)
     # pruner = CLIPViT_Singleton(model, compression_ratio=COMPRESSION_RATIO)

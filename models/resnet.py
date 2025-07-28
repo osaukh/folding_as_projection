@@ -449,7 +449,7 @@ def get_axis_to_perm_ResNet18(approx_repair=False, override=True):
 
 
 
-def get_module_by_name_ResNet18(module, access_string):
+def get_module_by_name_ResNet(module, access_string):
     names = access_string.split(sep='.')
 
     return reduce(getattr, names, module)

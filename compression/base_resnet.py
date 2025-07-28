@@ -1,11 +1,11 @@
 import torch
 import torch.nn as nn
 from collections import defaultdict
-from models.resnet18 import get_axis_to_perm_ResNet18, get_module_by_name_ResNet18, axes2perm_to_perm2axes
+from models.resnet import get_axis_to_perm_ResNet18, get_module_by_name_ResNet, axes2perm_to_perm2axes
 
-class BaseResNet18Compression:
+class BaseResNetCompression:
     """
-    Base class for ResNet18 compression (folding or pruning).
+    Base class for ResNet compression (folding or pruning).
     Unified apply() pipeline:
       - Iterate groups via axis_to_perm
       - Collect weights & biases

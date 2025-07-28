@@ -1,9 +1,9 @@
 import torch
 import torch.nn as nn
-from compression.base_resnet import BaseResNet18Compression
+from compression.base_resnet import BaseResNetCompression
 from compression.base_clip_vit import BaseCLIPViTCompression
 
-class ResNet18_RandomPruning(BaseResNet18Compression):
+class ResNet18_RandomPruning(BaseResNetCompression):
     def __init__(self, model, min_channels=1, compression_ratio=0.5):
         super().__init__(model, min_channels, compression_ratio)
         self.model_layers = dict(self.model.named_modules())

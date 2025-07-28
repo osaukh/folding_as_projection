@@ -8,22 +8,14 @@ import torch
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 
-from models.resnet import ResNet18
-
-from compression.fold import ResNet18_ModelFolding
-from compression.mag_prune import ResNet18_MagnitudePruning
-from compression.rand_fold import ResNet18_RandomFolding
-from compression.rand_prune import ResNet18_RandomPruning
-from compression.singleton import ResNet18_Singleton
+from models.preact_resnet import PreActResNet18
+from compression.fold import PreActResNet18_ModelFolding
 
 from utils.eval_utils import test, count_parameters
 from utils.tune_utils import repair_bn
 
 
-# -----------------------------------------------------------------------------
-# Configuration
-# -----------------------------------------------------------------------------
-CHECKPOINT_PATH = "../checkpoints/resnet18/adam/clean/2025-06-08_08-18-22_dataset=cifar10_arch=resnet18_opt=adam_seed=42_lr=0.01_batch_size=128_momentum=0.0_wd=0.0_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth"
+CHECKPOINT_PATH = "../checkpoints/preactresnet18/2023-01-15 14:02:36.368 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.4633774 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth"
 BATCH_SIZE = 128
 COMPRESSION_RATIO = 0.5
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
@@ -60,45 +52,26 @@ val_dataset = datasets.CIFAR10("../data", train=False, download=True, transform=
 train_loader = DataLoader(train_dataset, batch_size=128, shuffle=True, num_workers=8, pin_memory=True)
 val_loader = DataLoader(val_dataset, batch_size=128, shuffle=False, num_workers=8, pin_memory=True)
 
-# -----------------------------------------------------------------------------
-# Model loading
-# -----------------------------------------------------------------------------
-def load_resnet18_model(num_classes, checkpoint_path=None):
-    """
-    Load our custom ResNet18 model and optionally load pretrained weights.
-    """
-    model = ResNet18(num_classes=num_classes)
-
-    if checkpoint_path and os.path.exists(checkpoint_path):
-        print(f"[INFO] Loading checkpoint: {checkpoint_path}")
-        state_dict = torch.load(checkpoint_path, map_location="cpu")
-        model.load_state_dict(state_dict)
-    else:
-        print("[WARNING] No checkpoint found, using randomly initialized model.")
-
-    return model
-
-# -----------------------------------------------------------------------------
-# Main folding evaluation
-# -----------------------------------------------------------------------------
 def main():
-    num_classes = 10
-    model = load_resnet18_model(num_classes, CHECKPOINT_PATH).to(DEVICE)
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    # Evaluate before folding
-    print("\n=== Evaluation BEFORE compression ===")
-    # acc_before = test(model, val_loader, device=DEVICE)
-    # print(f"🔹 Top-1 Accuracy: {acc_before:.2f}%")
+    # ---- Load PreActResNet18 ----
+    model = PreActResNet18(num_classes=10).to(device)
+
+    # ---- Load checkpoint (adjust path) ----
+    checkpoint = torch.load(CHECKPOINT_PATH, map_location=device)
+    model.load_state_dict(checkpoint['last'])
+
+    # ---- Evaluation BEFORE compression ----
+    # print("=== Evaluation BEFORE compression ===")
+    # acc_before = test(model, test_loader, device)
+    # print(f"Top-1 Accuracy: {acc_before:.2f}%")
     original_params = count_parameters(model)
     print(f"Original Parameters: {original_params}")
 
-    # Apply folding
-    print("\n[INFO] Applying ResNet18 model compression...")
-    pruner = ResNet18_ModelFolding(model, compression_ratio=COMPRESSION_RATIO)
-    # pruner = ResNet18_MagnitudePruning(model, compression_ratio=COMPRESSION_RATIO, p=2)
-    # pruner = ResNet18_RandomFolding(model, compression_ratio=COMPRESSION_RATIO)
-    # pruner = ResNet18_RandomPruning(model, compression_ratio=COMPRESSION_RATIO)
-    # pruner = ResNet18_Singleton(model, compression_ratio=COMPRESSION_RATIO)
+    # ---- Apply compression (migrate to PreAct variant later) ----
+    # pruner = PreActResNet18_MagnitudePruning(model, compression_ratio=0.5, p=2)
+    pruner = PreActResNet18_ModelFolding(model, compression_ratio=0.5)
 
     pruned_model = pruner.apply()
 
@@ -118,6 +91,7 @@ def main():
     print(f"🔹 Top-1 Accuracy: {acc_after:.2f}%")
     print(f"Pruned Parameters: {pruned_params}")
     print(f"🔥 Compression Ratio: {(original_params - pruned_params) / original_params:.2%}")
+
 
 if __name__ == "__main__":
     main()

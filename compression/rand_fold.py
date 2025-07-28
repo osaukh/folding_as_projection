@@ -1,6 +1,6 @@
 import torch
 from collections import defaultdict
-from models.resnet18 import get_axis_to_perm_ResNet18, get_module_by_name_ResNet18
+from models.resnet import get_axis_to_perm_ResNet18, get_module_by_name_ResNet
 from utils.weight_clustering import axes2perm_to_perm2axes, merge_channel_clustering, NopMerge, _log_cluster_stats
 
 from compression.fold import ResNet18_ModelFolding
