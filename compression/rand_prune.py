@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 from compression.base_resnet import BaseResNetCompression
+from compression.base_preact_resnet import BasePreActResNetCompression
 from compression.base_clip_vit import BaseCLIPViTCompression
 
 class ResNet18_RandomPruning(BaseResNetCompression):
@@ -110,3 +111,58 @@ class CLIPViT_RandomPruning(BaseCLIPViTCompression):
         merge_sizes[module_proj] = new_proj.shape[1]
 
         return compressed, merge_sizes
+
+
+class PreActResNet18_RandomPruning(BasePreActResNetCompression):
+    def __init__(self, model, min_channels=1, compression_ratio=0.5):
+        super().__init__(model, min_channels, compression_ratio)
+        self.model_layers = dict(self.model.named_modules())
+
+    def _get_random_indices(self, n, k):
+        """Randomly select k channel indices."""
+        return torch.randperm(n, device=self.device)[:k]
+
+    def apply(self):
+        # --- Initial conv (no BN at root in PreActResNet) ---
+        conv1 = self.model_layers['conv1']
+        k1 = max(int(conv1.out_channels * self.keep_ratio), self.min_channels)
+        keep = self._get_random_indices(conv1.out_channels, k1)
+        self._rebuild_conv('conv1', out_keep=keep)
+        prev_keep = keep
+
+        # Residual blocks
+        for layer in ['layer1', 'layer2', 'layer3', 'layer4']:
+            blocks = self.model_layers[layer]
+
+            for i, block in enumerate(blocks):
+                prefix = f"{layer}.{i}"
+
+                # --- conv1 ---
+                conv1_k = max(int(block.conv1.out_channels * self.keep_ratio), self.min_channels)
+                keep1 = self._get_random_indices(block.conv1.out_channels, conv1_k)
+                in_keep = prev_keep
+
+                self._rebuild_conv(f"{prefix}.conv1", in_keep=in_keep, out_keep=keep1)
+                self._adjust_bn(f"{prefix}.bn1", in_keep)
+
+                # --- conv2 ---
+                conv2_k = max(int(block.conv2.out_channels * self.keep_ratio), self.min_channels)
+                # If shortcut exists, conv2 output must match shortcut output
+                if hasattr(block, 'shortcut') and isinstance(block.shortcut, nn.Sequential):
+                    keep2 = self._get_random_indices(block.conv2.out_channels, conv2_k)
+                else:
+                    keep2 = in_keep
+
+                self._rebuild_conv(f"{prefix}.conv2", in_keep=keep1, out_keep=keep2)
+                self._adjust_bn(f"{prefix}.bn2", keep1)
+
+                # --- shortcut (downsample) ---
+                if hasattr(block, 'shortcut') and isinstance(block.shortcut, nn.Sequential):
+                    self._rebuild_conv(f"{prefix}.shortcut.0", in_keep=in_keep, out_keep=keep2)
+
+                prev_keep = keep2
+
+        # Final BN and FC
+        self._adjust_bn("bn", prev_keep)
+        self._prune_linear("linear", prev_keep)
+        return self.model

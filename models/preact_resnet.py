@@ -156,16 +156,10 @@ def PreActResNet18(n_cls, model_width=64, cuda=True, half_prec=False, activation
 # ---------------------------------------------------------
 # Axis-to-permutation mapping (for compression)
 # ---------------------------------------------------------
-def get_axis_to_perm_PreActResNet18(approx_repair=False, override=True):
+def get_axis_to_perm_PreActResNet18(override=True):
     conv = lambda name, p_in, p_out: {
         f"{name}.weight": (p_out, p_in, None, None)
     }
-
-    if approx_repair:
-        conv = lambda name, p_in, p_out: {
-            f"{name}.weight": (p_out, p_in, None, None),
-            f"{name}.bias": (p_out,)
-        }
 
     norm = lambda name, p: {
         f"{name}.weight": (p,),
@@ -217,6 +211,7 @@ def get_axis_to_perm_PreActResNet18(approx_repair=False, override=True):
     }
 
     return axis_to_perm
+
 
 
 

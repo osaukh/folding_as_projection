@@ -163,7 +163,7 @@ class PreActResNet18_ModelFolding(BasePreActResNetCompression):
         perm_to_axes = axes2perm_to_perm2axes(axis_to_perm)
 
         for perm_id, axes in perm_to_axes.items():
-            # print(f"[DEBUG] Processing permutation group: {perm_id} with {len(axes)} axes")
+            # --- Collect weights ---
             features = []
             raw_params = {}
             module_offsets = {}
@@ -180,12 +180,14 @@ class PreActResNet18_ModelFolding(BasePreActResNetCompression):
                 module_offsets[module_name] = (offset, offset + n_channels)
                 offset += n_channels
 
+            # --- Cluster and fold ---
             all_features = torch.cat(features, dim=1)
             n_channels = all_features.shape[0]
             n_clusters = max(int(n_channels * self.keep_ratio), self.min_channels)
 
             compressed_params, merge_sizes = self.compress_function(axes, raw_params)
 
+            # --- Rebuild modules ---
             param_groups = defaultdict(dict)
             for full_name, tensor in compressed_params.items():
                 module_name, param_name = full_name.rsplit('.', 1)
@@ -193,13 +195,23 @@ class PreActResNet18_ModelFolding(BasePreActResNetCompression):
 
             for module_name, param_dict in param_groups.items():
                 module = get_module_by_name_PreActResNet18(self.model, module_name)
+
+                # Determine if this module should have BN folded
                 cluster_labels = None
                 if module_name in module_offsets:
                     start, end = module_offsets[module_name]
                     cluster_labels = merge_sizes.get('cluster_labels') if merge_sizes else None
 
-                new_module = self._rebuild_module(module_name, module, param_dict, cluster_labels, n_clusters)
+                # Rebuild Conv/Linear/BN
+                new_module = self._rebuild_module(
+                    module_name,
+                    module,
+                    param_dict,
+                    cluster_labels=cluster_labels,
+                    n_clusters=n_clusters
+                )
 
+                # Replace in parent
                 parent_name = '.'.join(module_name.split('.')[:-1])
                 attr_name = module_name.split('.')[-1]
                 if parent_name:
@@ -208,8 +220,9 @@ class PreActResNet18_ModelFolding(BasePreActResNetCompression):
                 else:
                     setattr(self.model, attr_name, new_module)
 
-        print("Model folding complete.")
+        print("Model folding complete (with BN folding).")
         return self.model
+
 
 
 
