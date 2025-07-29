@@ -19,6 +19,7 @@ class BaseResNetCompression:
         self.keep_ratio = 1.0 - compression_ratio
         self.device = next(model.parameters()).device
         self._rename_layers(self.model)
+        self.model_layers = dict(self.model.named_modules())
 
     # --- Setup ---
     def _rename_layers(self, model):

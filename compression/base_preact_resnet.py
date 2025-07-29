@@ -1,9 +1,5 @@
 import torch
 import torch.nn as nn
-from collections import defaultdict
-
-from models.preact_resnet import get_axis_to_perm_PreActResNet18, get_module_by_name_PreActResNet18
-from utils.weight_clustering import axes2perm_to_perm2axes, WeightClustering
 
 
 class BasePreActResNetCompression:
@@ -13,6 +9,7 @@ class BasePreActResNetCompression:
         self.keep_ratio = 1.0 - compression_ratio
         self.device = next(model.parameters()).device
         self._rename_layers(self.model)
+        self.model_layers = dict(self.model.named_modules())
 
     # --- Setup ---
     def _rename_layers(self, model):
@@ -20,6 +17,17 @@ class BasePreActResNetCompression:
             if not hasattr(model, '_module_dict'):
                 model._module_dict = {}
             model._module_dict[name] = module
+
+    def _replace(self, name, new_layer):
+        parts = name.split('.')
+        mod = self.model
+        for part in parts[:-1]:
+            mod = getattr(mod, part) if not part.isdigit() else mod[int(part)]
+        last = parts[-1]
+        if last.isdigit():
+            mod[int(last)] = new_layer
+        else:
+            setattr(mod, last, new_layer)
 
     # --- Abstract method ---
     def apply(self):
@@ -93,3 +101,63 @@ class BasePreActResNetCompression:
             return new_fc
 
         return old_module
+
+    # ---- Helpers: Conv, BN, FC pruning ----
+    def _get_keep_indices(self, scores, k):
+        return torch.argsort(scores, descending=True)[:k]
+
+    def _prune_linear(self, name, keep):
+        layer = self.model_layers[name]
+        assert isinstance(layer, nn.Linear), f"{name} is not Linear but {type(layer)}"
+
+        new_weight = layer.weight[:, keep].clone()
+        new_linear = nn.Linear(in_features=len(keep), out_features=layer.out_features).to(self.device)
+        new_linear.weight = nn.Parameter(new_weight)
+
+        if layer.bias is not None:
+            new_linear.bias = nn.Parameter(layer.bias.detach().clone())
+
+        self._replace(name, new_linear)
+        self.model_layers[name] = new_linear
+
+    def _rebuild_conv(self, name, in_keep=None, out_keep=None):
+        layer = self.model_layers[name]
+        assert isinstance(layer, nn.Conv2d), f"{name} is not Conv2d but {type(layer)}"
+
+        weight = layer.weight.detach()
+        orig_out, orig_in = weight.shape[:2]
+
+        out_indices = out_keep if out_keep is not None else torch.arange(orig_out, device=weight.device)
+        in_indices = in_keep if in_keep is not None else torch.arange(orig_in, device=weight.device)
+
+        new_weight = weight.index_select(0, out_indices).index_select(1, in_indices).clone()
+
+        new_conv = nn.Conv2d(
+            in_channels=len(in_indices),
+            out_channels=len(out_indices),
+            kernel_size=layer.kernel_size,
+            stride=layer.stride,
+            padding=layer.padding,
+            dilation=layer.dilation,
+            groups=layer.groups,
+            bias=layer.bias is not None,
+            padding_mode=layer.padding_mode
+        ).to(self.device)
+
+        new_conv.weight = nn.Parameter(new_weight)
+        if layer.bias is not None:
+            new_conv.bias = nn.Parameter(layer.bias[out_indices].clone())
+
+        self._replace(name, new_conv)
+        self.model_layers[name] = new_conv
+
+    def _adjust_bn(self, name, keep):
+        bn = self.model_layers[name]
+        assert isinstance(bn, nn.BatchNorm2d), f"{name} is not BatchNorm2d but {type(bn)}"
+        new_bn = nn.BatchNorm2d(len(keep)).to(self.device)
+        new_bn.weight = nn.Parameter(bn.weight[keep].detach().clone())
+        new_bn.bias = nn.Parameter(bn.bias[keep].detach().clone())
+        new_bn.running_mean = bn.running_mean[keep].detach().clone()
+        new_bn.running_var = bn.running_var[keep].detach().clone()
+        self._replace(name, new_bn)
+        self.model_layers[name] = new_bn

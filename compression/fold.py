@@ -17,9 +17,6 @@ class ResNet18_ModelFolding(BaseResNetCompression):
         """
         Folding logic: perform clustering and merge weights.
         """
-        # Use hkmeans clustering
-        from utils.weight_clustering import merge_channel_clustering
-
         n_channels = params[axes[0][0]].shape[axes[0][1]]
         n_clusters = max(int(n_channels * self.keep_ratio), 1)
 
@@ -135,158 +132,81 @@ class CLIPViT_ModelFolding(BaseCLIPViTCompression):
 
 class PreActResNet18_ModelFolding(BasePreActResNetCompression):
     def compress_function(self, axes, params):
-        from utils.weight_clustering import merge_channel_clustering, NopMerge
+        """
+        Folding logic: perform clustering and merge weights.
+        """
+        n_channels = params[axes[0][0]].shape[axes[0][1]]
+        n_clusters = max(int(n_channels * self.keep_ratio), 1)
 
-        compressed_params = {}
-        meta = {}
+        # Flatten and cluster
+        weight = concat_weights({0: axes}, params, 0, n_channels)
+        clusterer = WeightClustering(n_clusters=n_clusters, n_features=n_channels,
+                                     method="hkmeans", normalize=False, use_pca=True)
+        labels = clusterer(weight).to(self.device).long()
 
-        # Filter axes: skip modules not in params (e.g., empty shortcuts)
-        valid_axes = [(mn, ax) for mn, ax in axes if mn in params]
+        # Log cluster stats
+        _log_cluster_stats(weight, labels, axes[0][0])
 
-        # Group by channel count
-        size_groups = defaultdict(list)
-        for module_name, axis in valid_axes:
-            n_channels = params[module_name].shape[axis]
-            size_groups[n_channels].append((module_name, axis))
+        # Convert to merge matrix
+        merge_matrix = torch.zeros((n_clusters, n_channels), device=self.device, dtype=torch.float32)
+        merge_matrix.scatter_(0, labels.unsqueeze(0), 1.0)
+        merge_matrix /= merge_matrix.sum(dim=1, keepdim=True).clamp(min=1)
 
-        # Process each group
-        for n_channels, grouped_axes in size_groups.items():
-            n_clusters = max(int(n_channels * self.keep_ratio), 1)
+        # Merge weights
+        from utils.weight_clustering import NopMerge
+        compressed_params = merge_channel_clustering({0: axes}, params, 0, merge_matrix, custom_merger=NopMerge())
 
-            # Build features for clustering
-            features = []
-            for module_name, axis in grouped_axes:
-                weight = params[module_name]
-                weight_t = weight.transpose(0, axis).contiguous()
-                reshaped = weight_t.view(weight_t.shape[0], -1)
-                features.append(reshaped)
-
-            all_features = torch.cat(features, dim=1)
-
-            # Cluster
-            clusterer = WeightClustering(
-                n_clusters=n_clusters,
-                n_features=all_features.shape[1],
-                method="hkmeans",
-                normalize=False,
-                use_pca=True
-            )
-            labels = clusterer(all_features).to(self.device).long()
-
-            _log_cluster_stats(all_features, labels, grouped_axes[0][0])
-
-            # Merge weights
-            merge_matrix = torch.zeros((n_clusters, n_channels), device=self.device)
-            merge_matrix.scatter_(0, labels.unsqueeze(0), 1.0)
-            merge_matrix /= merge_matrix.sum(dim=1, keepdim=True).clamp(min=1)
-
-            compressed_group = merge_channel_clustering(
-                {0: grouped_axes}, params, 0, merge_matrix, custom_merger=NopMerge()
-            )
-            compressed_params.update(compressed_group)
-
-            # Store cluster labels for BN folding
-            for mn, _ in grouped_axes:
-                meta[mn] = {"cluster_labels": labels}
-
-        return compressed_params, meta
+        return compressed_params, {'cluster_labels': labels}
 
     def apply(self):
-        """
-        Apply model folding (channel clustering + centroid merging) to PreActResNet18.
-        Handles conv layers and folds bn2 (output BN) while leaving bn1 untouched.
-        Adjusts the final linear layer to match last conv output.
-        """
-        print(f"[INFO] Starting {self.__class__.__name__}...")
-
-        # --- Build mapping of permutation groups ---
         axis_to_perm = get_axis_to_perm_PreActResNet18(override=False)
         perm_to_axes = axes2perm_to_perm2axes(axis_to_perm)
 
-        # --- Process each permutation group ---
         for perm_id, axes in perm_to_axes.items():
+            # print(f"[DEBUG] Processing permutation group: {perm_id} with {len(axes)} axes")
+            features = []
             raw_params = {}
+            module_offsets = {}
+            offset = 0
 
-            # Gather weights for this group
             for module_name, axis in axes:
                 module = get_module_by_name_PreActResNet18(self.model, module_name)
+                weight = module.weight.data if hasattr(module, 'weight') else module.data
+                raw_params[module_name] = weight
+                weight = weight.transpose(0, axis).contiguous()
+                n_channels = weight.shape[0]
+                reshaped = weight.view(n_channels, -1)
+                features.append(reshaped)
+                module_offsets[module_name] = (offset, offset + n_channels)
+                offset += n_channels
 
-                # Skip identity shortcuts (no weight attribute)
-                if not hasattr(module, "weight"):
-                    continue
+            all_features = torch.cat(features, dim=1)
+            n_channels = all_features.shape[0]
+            n_clusters = max(int(n_channels * self.keep_ratio), self.min_channels)
 
-                raw_params[module_name] = module.weight.data
+            compressed_params, merge_sizes = self.compress_function(axes, raw_params)
 
-            # Skip if group has no trainable weights
-            if not raw_params:
-                continue
-
-            # --- Perform clustering + merge ---
-            compressed_params, meta = self.compress_function(axes, raw_params)
-
-            # Rebuild modules with compressed weights
             param_groups = defaultdict(dict)
             for full_name, tensor in compressed_params.items():
-                if "." in full_name:
-                    module_name, param_name = full_name.rsplit(".", 1)
-                else:
-                    module_name, param_name = full_name, "weight"
+                module_name, param_name = full_name.rsplit('.', 1)
                 param_groups[module_name][param_name] = tensor
 
             for module_name, param_dict in param_groups.items():
                 module = get_module_by_name_PreActResNet18(self.model, module_name)
-                new_module = self._rebuild_module(module_name, module, param_dict)
+                cluster_labels = None
+                if module_name in module_offsets:
+                    start, end = module_offsets[module_name]
+                    cluster_labels = merge_sizes.get('cluster_labels') if merge_sizes else None
 
-                # Replace module in model
-                parent_name = ".".join(module_name.split(".")[:-1])
-                attr_name = module_name.split(".")[-1]
+                new_module = self._rebuild_module(module_name, module, param_dict, cluster_labels, n_clusters)
+
+                parent_name = '.'.join(module_name.split('.')[:-1])
+                attr_name = module_name.split('.')[-1]
                 if parent_name:
                     parent = get_module_by_name_PreActResNet18(self.model, parent_name)
                     setattr(parent, attr_name, new_module)
                 else:
                     setattr(self.model, attr_name, new_module)
-
-                # --- Handle BatchNorm folding ---
-                # Only fold bn2 (output BN of conv1) to match reduced output channels
-                if "conv1" in module_name:
-                    bn_name = module_name.replace("conv1", "bn2")
-                else:
-                    bn_name = None
-
-                if bn_name:
-                    try:
-                        bn_module = get_module_by_name_PreActResNet18(self.model, bn_name)
-                    except AttributeError:
-                        bn_module = None
-
-                    if bn_module is not None and "weight" in param_dict:
-                        labels = meta.get(module_name, {}).get("cluster_labels", None)
-                        if labels is not None:
-                            n_clusters = param_dict["weight"].shape[0]
-                            folded_bn = self._fold_bn_params(bn_module, labels, n_clusters)
-
-                            # Replace BN in model
-                            parent_name_bn = ".".join(bn_name.split(".")[:-1])
-                            attr_name_bn = bn_name.split(".")[-1]
-                            if parent_name_bn:
-                                parent_bn = get_module_by_name_PreActResNet18(self.model, parent_name_bn)
-                                setattr(parent_bn, attr_name_bn, folded_bn)
-                            else:
-                                setattr(self.model, attr_name_bn, folded_bn)
-
-        # --- Adjust final linear layer to match last conv output ---
-        last_conv = get_module_by_name_PreActResNet18(self.model, "layer4.1.conv2")
-        new_in_features = last_conv.out_channels
-        old_linear = self.model.linear
-        new_linear = nn.Linear(new_in_features, old_linear.out_features).to(self.device)
-
-        # Copy weights partially if dimensions differ
-        min_dim = min(old_linear.weight.shape[1], new_in_features)
-        new_linear.weight.data[:, :min_dim] = old_linear.weight.data[:, :min_dim]
-        if old_linear.bias is not None:
-            new_linear.bias.data = old_linear.bias.data.clone()
-
-        self.model.linear = new_linear
 
         print("Model folding complete.")
         return self.model
