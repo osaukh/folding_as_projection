@@ -339,7 +339,7 @@ def _log_cluster_stats(W_fc, labels, module_name):
     centroids = torch.stack(centroids)
     inter_dist = torch.cdist(centroids, centroids).mean().item()
 
-    print(f"[CLUSTER-STATS] {module_name}: Clusters={len(unique_labels)}, "
+    print(f"[CLUSTERS] {module_name}: Clusters={len(unique_labels)}, "
           f"Intra={sum(intra_dists)/len(intra_dists):.4f}, Inter={inter_dist:.4f}")
 
 

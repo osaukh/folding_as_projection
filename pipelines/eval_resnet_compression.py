@@ -23,9 +23,11 @@ from utils.tune_utils import repair_bn
 # -----------------------------------------------------------------------------
 # Configuration
 # -----------------------------------------------------------------------------
-CHECKPOINT_PATH = "../checkpoints/resnet18/adam/clean/2025-06-08_08-18-22_dataset=cifar10_arch=resnet18_opt=adam_seed=42_lr=0.01_batch_size=128_momentum=0.0_wd=0.0_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth"
+# CHECKPOINT_PATH = "../checkpoints/resnet18/adam/2025-06-08_08-18-22_dataset=cifar10_arch=resnet18_opt=adam_seed=42_lr=0.01_batch_size=128_momentum=0.0_wd=0.0_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth"
+# CHECKPOINT_PATH = "../checkpoints/resnet18/adam/2025-06-07_17-27-38_dataset=cifar10_arch=resnet18_opt=adam_seed=42_lr=0.1_batch_size=128_momentum=0.0_wd=0.0_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth"
+CHECKPOINT_PATH = "../checkpoints/resnet18/adam/2025-06-07_17-27-59_dataset=cifar10_arch=resnet18_opt=adam_seed=42_lr=0.1_batch_size=128_momentum=0.0_wd=0.0_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth"
 BATCH_SIZE = 128
-COMPRESSION_RATIO = 0.5
+COMPRESSION_RATIO = 0.1
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 def fix_seed(seed=42):
@@ -86,7 +88,7 @@ def main():
     model = load_resnet18_model(num_classes, CHECKPOINT_PATH).to(DEVICE)
 
     # Evaluate before folding
-    print("\n=== Evaluation BEFORE compression ===")
+    # print("\n=== Evaluation BEFORE compression ===")
     # acc_before = test(model, val_loader, device=DEVICE)
     # print(f"🔹 Top-1 Accuracy: {acc_before:.2f}%")
     original_params = count_parameters(model)
@@ -94,8 +96,8 @@ def main():
 
     # Apply folding
     print("\n[INFO] Applying ResNet18 model compression...")
-    pruner = ResNet18_ModelFolding(model, compression_ratio=COMPRESSION_RATIO)
-    # pruner = ResNet18_MagnitudePruning(model, compression_ratio=COMPRESSION_RATIO, p=2)
+    # pruner = ResNet18_ModelFolding(model, compression_ratio=COMPRESSION_RATIO)
+    pruner = ResNet18_MagnitudePruning(model, compression_ratio=COMPRESSION_RATIO, p=2)
     # pruner = ResNet18_RandomFolding(model, compression_ratio=COMPRESSION_RATIO)
     # pruner = ResNet18_RandomPruning(model, compression_ratio=COMPRESSION_RATIO)
     # pruner = ResNet18_Singleton(model, compression_ratio=COMPRESSION_RATIO)

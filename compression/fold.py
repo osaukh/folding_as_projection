@@ -18,24 +18,27 @@ class ResNet18_ModelFolding(BaseResNetCompression):
         """
         Folding logic: perform clustering and merge weights.
         """
-        n_channels = params[axes[0][0]].shape[axes[0][1]]
+        # Always cluster on output channels
+        n_channels = params[axes[0][0]].shape[0]
         n_clusters = max(int(n_channels * self.keep_ratio), 1)
 
-        # Flatten and cluster
+        # Flatten weights across layers (output dim)
         weight = concat_weights({0: axes}, params, 0, n_channels)
+
+        # Cluster
         clusterer = WeightClustering(n_clusters=n_clusters, n_features=n_channels,
                                      method="hkmeans", normalize=False, use_pca=True)
         labels = clusterer(weight).to(self.device).long()
 
-        # Log cluster stats
         _log_cluster_stats(weight, labels, axes[0][0])
 
-        # Convert to merge matrix
-        merge_matrix = torch.zeros((n_clusters, n_channels), device=self.device, dtype=torch.float32)
+        # Build merge matrix
+        merge_matrix = torch.zeros((n_clusters, n_channels), device=self.device)
         merge_matrix.scatter_(0, labels.unsqueeze(0), 1.0)
-        merge_matrix /= merge_matrix.sum(dim=1, keepdim=True).clamp(min=1)
+        cluster_counts = merge_matrix.sum(dim=1, keepdim=True)
+        merge_matrix /= cluster_counts.clamp(min=1)  # avoid div by zero
 
-        # Merge weights
+        # Merge params
         from utils.weight_clustering import NopMerge
         compressed_params = merge_channel_clustering({0: axes}, params, 0, merge_matrix, custom_merger=NopMerge())
 

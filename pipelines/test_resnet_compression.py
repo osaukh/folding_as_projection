@@ -107,8 +107,10 @@ def main():
 
             # Baseline (only for ratio=0.0)
             if ratio == 0.0:
-                print(f"\n[MODEL] {i+1}/{len(ckpt_paths)} {model_name}")
                 acc = test(model, test_loader, device)
+                if acc < 50.0:
+                    break
+                print(f"\n[MODEL] {i + 1}/{len(ckpt_paths)} {model_name}")
                 log_line(ratio, "BASE", params=orig_params, acc=f"{acc:.2f}")
                 continue
 
