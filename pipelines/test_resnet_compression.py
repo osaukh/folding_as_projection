@@ -112,7 +112,7 @@ def main():
                     break
                 print(f"\n[MODEL] {i + 1}/{len(ckpt_paths)} {model_name}")
                 log_line(ratio, "BASE", params=orig_params, acc=f"{acc:.2f}")
-                orig_outputs = get_outputs(model.eval(), test_loader)
+                orig_outputs = get_outputs(model.eval(), test_loader, device)
                 continue
 
             # Apply pruning/folding
@@ -129,7 +129,7 @@ def main():
             log_line(ratio, "REPAIR", acc=f"{acc:.2f}")
 
             # Compute functional deviation
-            fd = torch.norm(orig_outputs - get_outputs(model.eval(), test_loader), dim=1).mean().item()
+            fd = torch.norm(orig_outputs - get_outputs(model.eval(), test_loader, device), dim=1).mean().item()
             log_line(ratio, "FD", value=f"{fd:.4f}")
 
             # Optional fine-tune
