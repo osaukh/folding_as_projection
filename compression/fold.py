@@ -257,8 +257,8 @@ class ViT_ModelFolding(BaseViTCompression):
         n_channels = W_fc.shape[0]
         n_clusters = max(int(n_channels * self.keep_ratio), self.min_channels)
 
-        # --- Clustering (HKMeans, no PCA, no normalization) ---
-        clusterer = WeightClustering(n_clusters=n_clusters, method="hkmeans", use_pca=False, normalize=False)
+        # --- Clustering (HKMeans, no PCA, normalization) ---
+        clusterer = WeightClustering(n_clusters=n_clusters, method="hkmeans", use_pca=False, normalize=True)
         labels = clusterer(W_fc).to(W_fc.device).long()
 
         _log_cluster_stats(W_fc, labels, module_fc)
