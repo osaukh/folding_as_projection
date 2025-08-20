@@ -78,18 +78,21 @@ class ResNet18_ModelFolding(BaseResNetCompression):
 
 
 class CLIPViT_ModelFolding(BaseCLIPViTCompression):
-    # --- Folding for CLIP ViT (Representative Selection) ---
     def compress_function(self, axes, params):
         """
-            Compress weights for CLIP ViT MLP (c_fc + c_proj) using representative selection:
-            - Cluster c_fc output channels
-            - Select representative indices per cluster (first occurrence)
-            - Apply same selection to c_proj input channels
-            """
+        Compress weights for CLIP ViT MLP (c_fc + c_proj) using cluster means:
+          - Normalize W_fc (per feature) for fair clustering
+          - Cluster c_fc output channels on the normalized matrix
+          - Use the mean vector of each cluster (in normalized space), then de-normalize
+          - For c_proj, sum columns corresponding to clustered members
+          - For c_fc bias, average within each cluster
+        """
+        import torch
+
         compressed = {}
         merge_sizes = {}
 
-        # Unpack module names
+        # Unpack module names (axes entries are tuples, second element unused here)
         module_fc, _ = axes[0]
         module_proj, _ = axes[1]
 
@@ -97,41 +100,79 @@ class CLIPViT_ModelFolding(BaseCLIPViTCompression):
         W_fc = params[module_fc]  # [hidden_dim, in_dim]
         W_proj = params[module_proj]  # [out_dim, hidden_dim]
 
-        # --- Clustering (HKMeans, no PCA, normalization) ---
+        device = W_fc.device
+        dtype = W_fc.dtype
+
+        # --- Determine number of clusters ---
         n_channels = W_fc.shape[0]
         n_clusters = max(int(n_channels * self.keep_ratio), self.min_channels)
+        n_clusters = min(n_clusters, n_channels)
 
-        clusterer = WeightClustering(n_clusters=n_clusters, method="hkmeans", use_pca=False, normalize=True)
-        labels = clusterer(W_fc).to(W_fc.device).long()
+        # --- Column-wise normalization (z-score) before clustering ---
+        eps = torch.finfo(dtype).eps
+        col_mean = W_fc.mean(dim=0, keepdim=True)  # [1, in_dim]
+        col_std = W_fc.std(dim=0, unbiased=False, keepdim=True) + eps  # [1, in_dim]
+        W_fc_norm = (W_fc - col_mean) / col_std  # [hidden_dim, in_dim]
 
-        _log_cluster_stats(W_fc, labels, module_fc)
+        # --- Clustering on normalized matrix (no extra normalization inside) ---
+        clusterer = WeightClustering(
+            n_clusters=n_clusters,
+            method="hkmeans",
+            use_pca=False,
+            normalize=False  # already normalized above
+        )
+        labels = clusterer(W_fc_norm).to(device).long()
 
-        # Representative indices (first element in each cluster)
+        _log_cluster_stats(W_fc_norm, labels, module_fc)
+
+        # --- Ensure labels cover all (possibly fewer) clusters ---
         unique_labels = torch.unique(labels, sorted=True)
-        rep_indices = torch.stack([
-            torch.nonzero(labels == lbl, as_tuple=True)[0][0] for lbl in unique_labels
-        ]).to(W_fc.device)
+        if unique_labels.numel() < n_clusters:
+            remap = {int(lbl): i for i, lbl in enumerate(unique_labels.tolist())}
+            labels = torch.tensor([remap[int(l.item())] for l in labels],
+                                  device=device, dtype=torch.long)
+            n_clusters = unique_labels.numel()
 
-        # Select channels
-        new_fc = W_fc[rep_indices, :]
-        new_proj = W_proj[:, rep_indices]
+        # --- Build de-normalized cluster means for W_fc, and sum columns for W_proj ---
+        cluster_means = []
+        proj_cols = []
+        for cid in range(n_clusters):
+            members = (labels == cid).nonzero(as_tuple=True)[0]  # row indices in this cluster
 
-        compressed[module_fc + '.weight'] = new_fc
-        compressed[module_proj + '.weight'] = new_proj
+            # Mean in normalized space, then de-normalize
+            mean_norm = W_fc_norm[members, :].mean(dim=0, keepdim=False)  # [in_dim]
+            mean_vec = mean_norm * col_std.squeeze(0) + col_mean.squeeze(0)
+            cluster_means.append(mean_vec)
 
-        # Biases
+            # Sum corresponding columns in W_proj (downstream combination of clustered units)
+            proj_sum = W_proj[:, members].sum(dim=1, keepdim=True)  # [out_dim, 1]
+            proj_cols.append(proj_sum)
+
+        new_fc = torch.stack(cluster_means, dim=0)  # [n_clusters, in_dim]
+        new_proj = torch.cat(proj_cols, dim=1)  # [out_dim, n_clusters]
+
+        compressed[module_fc + '.weight'] = new_fc.to(device=device, dtype=dtype)
+        compressed[module_proj + '.weight'] = new_proj.to(device=device, dtype=dtype)
+
+        # --- Biases ---
+        # c_fc bias: average within each cluster
         if module_fc + '.bias' in params and params[module_fc + '.bias'] is not None:
-            compressed[module_fc + '.bias'] = params[module_fc + '.bias'][rep_indices]
+            b_fc = params[module_fc + '.bias']
+            new_b = []
+            for cid in range(n_clusters):
+                members = (labels == cid).nonzero(as_tuple=True)[0]
+                new_b.append(b_fc[members].mean())
+            compressed[module_fc + '.bias'] = torch.stack(new_b, dim=0).to(device=device, dtype=dtype)
+
+        # c_proj bias unchanged
         if module_proj + '.bias' in params and params[module_proj + '.bias'] is not None:
             compressed[module_proj + '.bias'] = params[module_proj + '.bias']
 
-        # Track new sizes
+        # --- Track new sizes ---
         merge_sizes[module_fc] = new_fc.shape[0]
         merge_sizes[module_proj] = new_proj.shape[1]
 
         return compressed, merge_sizes
-
-
 
 
 class PreActResNet18_ModelFolding(BasePreActResNetCompression):
@@ -231,13 +272,6 @@ class PreActResNet18_ModelFolding(BasePreActResNetCompression):
 
 
 class ViT_ModelFolding(BaseViTCompression):
-    """
-    Folding for SimpleViT MLP (FeedForward layers):
-    - Cluster c_fc output channels
-    - Select representative indices per cluster (first occurrence)
-    - Apply same selection to c_proj input channels
-    """
-
     def __init__(self, model, min_channels=1, compression_ratio=0.5):
         super().__init__(model, min_channels, compression_ratio)
 
@@ -250,36 +284,79 @@ class ViT_ModelFolding(BaseViTCompression):
         module_proj = axes[1]
 
         # --- Extract weights ---
-        W_fc = params[module_fc + '.weight']   # [hidden_dim, in_dim]
+        W_fc = params[module_fc + '.weight']  # [hidden_dim, in_dim]
         W_proj = params[module_proj + '.weight']  # [out_dim, hidden_dim]
+
+        device = W_fc.device
+        dtype = W_fc.dtype
 
         # --- Determine number of clusters ---
         n_channels = W_fc.shape[0]
         n_clusters = max(int(n_channels * self.keep_ratio), self.min_channels)
+        n_clusters = min(n_clusters, n_channels)
 
-        # --- Clustering (HKMeans, no PCA, normalization) ---
-        clusterer = WeightClustering(n_clusters=n_clusters, method="hkmeans", use_pca=False, normalize=True)
-        labels = clusterer(W_fc).to(W_fc.device).long()
+        # --- Column-wise normalization (z-score) for clustering ---
+        #     We normalize features (columns) so each dimension contributes comparably.
+        eps = torch.finfo(dtype).eps
+        col_mean = W_fc.mean(dim=0, keepdim=True)  # [1, in_dim]
+        col_std = W_fc.std(dim=0, unbiased=False, keepdim=True) + eps  # [1, in_dim]
+        W_fc_norm = (W_fc - col_mean) / col_std  # [hidden_dim, in_dim]
 
-        _log_cluster_stats(W_fc, labels, module_fc)
+        # --- Clustering on normalized matrix (disable internal normalization) ---
+        clusterer = WeightClustering(
+            n_clusters=n_clusters,
+            method="hkmeans",
+            use_pca=False,
+            normalize=False  # we already normalized
+        )
+        labels = clusterer(W_fc_norm).to(device).long()
 
-        # --- Select representative indices (first in each cluster) ---
+        _log_cluster_stats(W_fc_norm, labels, module_fc)
+
+        # --- Ensure labels cover all clusters (HKMeans can be sparse in edge cases) ---
         unique_labels = torch.unique(labels, sorted=True)
-        rep_indices = torch.stack([
-            torch.nonzero(labels == lbl, as_tuple=True)[0][0] for lbl in unique_labels
-        ]).to(W_fc.device)
+        if unique_labels.numel() < n_clusters:
+            # Collapse to the actually used cluster ids in a stable order
+            # (Optional: you could re-run clustering with a smaller k if desired.)
+            remap = {int(lbl): i for i, lbl in enumerate(unique_labels.tolist())}
+            labels = torch.tensor([remap[int(l.item())] for l in labels], device=device, dtype=torch.long)
+            n_clusters = unique_labels.numel()
 
-        # --- Apply representative selection ---
-        new_fc = W_fc[rep_indices, :]            # Reduce rows
-        new_proj = W_proj[:, rep_indices]        # Reduce columns
+        # --- Build cluster means in normalized space, then de-normalize ---
+        #     mean_norm: [n_clusters, in_dim]; mean_vec = mean_norm * std + mean
+        cluster_means = []
+        proj_cols = []
+        for cid in range(n_clusters):
+            members = (labels == cid).nonzero(as_tuple=True)[0]  # indices of rows in this cluster
+            # Normalized-space mean vector
+            mean_norm = W_fc_norm[members, :].mean(dim=0, keepdim=False)  # [in_dim]
+            # De-normalize to original scale
+            mean_vec = mean_norm * col_std.squeeze(0) + col_mean.squeeze(0)  # [in_dim]
+            cluster_means.append(mean_vec)
 
-        compressed[module_fc + '.weight'] = new_fc
-        compressed[module_proj + '.weight'] = new_proj
+            # For the projection layer, sum columns corresponding to the members
+            # (since the new hidden unit approximates the mean of members)
+            proj_sum = W_proj[:, members].sum(dim=1, keepdim=True)  # [out_dim, 1]
+            proj_cols.append(proj_sum)
+
+        new_fc = torch.stack(cluster_means, dim=0)  # [n_clusters, in_dim]
+        new_proj = torch.cat(proj_cols, dim=1)  # [out_dim, n_clusters]
+
+        compressed[module_fc + '.weight'] = new_fc.to(device=device, dtype=dtype)
+        compressed[module_proj + '.weight'] = new_proj.to(device=device, dtype=dtype)
 
         # --- Handle biases ---
         if module_fc + '.bias' in params and params[module_fc + '.bias'] is not None:
-            compressed[module_fc + '.bias'] = params[module_fc + '.bias'][rep_indices]
+            b_fc = params[module_fc + '.bias']
+            new_b = []
+            for cid in range(n_clusters):
+                members = (labels == cid).nonzero(as_tuple=True)[0]
+                new_b.append(b_fc[members].mean())
+            new_b = torch.stack(new_b, dim=0)  # [n_clusters]
+            compressed[module_fc + '.bias'] = new_b.to(device=device, dtype=dtype)
+
         if module_proj + '.bias' in params and params[module_proj + '.bias'] is not None:
+            # Next-layer bias remains unchanged
             compressed[module_proj + '.bias'] = params[module_proj + '.bias']
 
         # --- Track new sizes ---
@@ -287,7 +364,4 @@ class ViT_ModelFolding(BaseViTCompression):
         merge_sizes[module_proj] = new_proj.shape[1]
 
         return compressed, merge_sizes
-
-
-
 
