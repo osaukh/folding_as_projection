@@ -21,5 +21,5 @@
 - `CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.eval_clip_compression`
 
 ## Testing pipelines
-- `CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_resnet_compression --ckpt_dir ../checkpoints/resnet18/adam/clean --method fold`
+- `CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_resnet_compression --ckpt_dir ../checkpoints/resnet18/adam --method fold`
 - `CUDA_VISIBLE_DEVICES=6 python3 -m pipelines.test_iterative_resnet_compression --ckpt_dir ../checkpoints/resnet18/iterative --method fold --prune_fraction 0.2 --iterations 7 --epochs 1 --lr 1e-4 >>output/resnet18/iterative-fold-p0.2-i7-e1-lr0.0001`
