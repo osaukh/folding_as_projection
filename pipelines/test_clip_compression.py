@@ -60,7 +60,7 @@ def main():
     parser.add_argument("--method", type=str, default="fold",
                         choices=["fold", "mag-l1", "mag-l2", "rand-fold", "rand-prune", "singleton"])
     parser.add_argument("--epochs", type=int, default=5, help="Fine-tuning epochs after compression")
-    parser.add_argument("--lr", type=float, default=5e-5, help="Learning rate for fine-tuning")
+    parser.add_argument("--lr", type=float, default=1e-6, help="Learning rate for fine-tuning")
     parser.add_argument("--imagenet_root", type=str, default="../data", help="Path to ImageNet root")
     parser.add_argument("--batch_size", type=int, default=32)
     args = parser.parse_args()
@@ -120,7 +120,7 @@ def main():
             log_line(ratio, "PRUNE", params=pruned_params, acc=f"{acc:.2f}")
 
             # Retune LayerNorm
-            retune_layernorm(model, train_loader, device=device, lr=args.lr)
+            retune_layernorm(model, train_loader, device=device, lr=5e-5)
             acc = test(model, val_loader, device)
             log_line(ratio, "REPAIR", acc=f"{acc:.2f}")
 
@@ -130,7 +130,7 @@ def main():
 
             # Optional fine-tune on ImageNet training set
             if args.epochs > 0:
-                opt = torch.optim.Adam(model.parameters(), lr=args.lr)
+                opt = torch.optim.AdamW(model.parameters(), lr=args.lr)
                 loss_fn = nn.CrossEntropyLoss()
                 for epoch in range(args.epochs):
                     model.train()

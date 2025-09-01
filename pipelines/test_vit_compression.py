@@ -130,7 +130,7 @@ def main():
             log_line(ratio, "PRUNE", params=pruned_params, acc=f"{acc:.2f}")
 
             # Retune LayerNorm
-            retune_layernorm(model, train_loader, device=device, lr=args.lr)
+            retune_layernorm(model, train_loader, device=device, lr=1e-4)
             acc = test(model, val_loader, device)
             log_line(ratio, "REPAIR", acc=f"{acc:.2f}")
 

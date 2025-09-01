@@ -12,6 +12,7 @@ from models.resnet import ResNet18
 
 from compression.fold import ResNet18_ModelFolding
 from compression.mag_prune import ResNet18_MagnitudePruning
+from compression.wanda import ResNet18_WandaPruning
 from compression.rand_fold import ResNet18_RandomFolding
 from compression.rand_prune import ResNet18_RandomPruning
 from compression.singleton import ResNet18_Singleton
@@ -23,11 +24,11 @@ from utils.tune_utils import repair_bn
 # -----------------------------------------------------------------------------
 # Configuration
 # -----------------------------------------------------------------------------
-# CHECKPOINT_PATH = "../checkpoints/resnet18/adam/2025-06-08_08-18-22_dataset=cifar10_arch=resnet18_opt=adam_seed=42_lr=0.01_batch_size=128_momentum=0.0_wd=0.0_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth"
+CHECKPOINT_PATH = "../checkpoints/resnet18/adam/2025-06-08_08-18-22_dataset=cifar10_arch=resnet18_opt=adam_seed=42_lr=0.01_batch_size=128_momentum=0.0_wd=0.0_epochs=200_l1=1e-05_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth"
 # CHECKPOINT_PATH = "../checkpoints/resnet18/adam/2025-06-07_17-27-38_dataset=cifar10_arch=resnet18_opt=adam_seed=42_lr=0.1_batch_size=128_momentum=0.0_wd=0.0_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=True.pth"
-CHECKPOINT_PATH = "../checkpoints/resnet18/adam/2025-06-07_17-27-59_dataset=cifar10_arch=resnet18_opt=adam_seed=42_lr=0.1_batch_size=128_momentum=0.0_wd=0.0_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth"
+# CHECKPOINT_PATH = "../checkpoints/resnet18/adam/2025-06-07_17-27-59_dataset=cifar10_arch=resnet18_opt=adam_seed=42_lr=0.1_batch_size=128_momentum=0.0_wd=0.0_epochs=200_l1=0.0_l2=0.0_sam=False_sam_rho=0.05_rand_aug=False_lr_schedule=False.pth"
 BATCH_SIZE = 128
-COMPRESSION_RATIO = 0.1
+COMPRESSION_RATIO = 0.4
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 def fix_seed(seed=42):
@@ -88,19 +89,22 @@ def main():
     model = load_resnet18_model(num_classes, CHECKPOINT_PATH).to(DEVICE)
 
     # Evaluate before folding
-    # print("\n=== Evaluation BEFORE compression ===")
-    # acc_before = test(model, val_loader, device=DEVICE)
-    # print(f"🔹 Top-1 Accuracy: {acc_before:.2f}%")
+    print("\n=== Evaluation BEFORE compression ===")
+    acc_before = test(model, val_loader, device=DEVICE)
+    print(f"🔹 Top-1 Accuracy: {acc_before:.2f}%")
     original_params = count_parameters(model)
     print(f"Original Parameters: {original_params}")
 
     # Apply folding
     print("\n[INFO] Applying ResNet18 model compression...")
     # pruner = ResNet18_ModelFolding(model, compression_ratio=COMPRESSION_RATIO)
-    pruner = ResNet18_MagnitudePruning(model, compression_ratio=COMPRESSION_RATIO, p=2)
+    # pruner = ResNet18_MagnitudePruning(model, compression_ratio=COMPRESSION_RATIO, p=2)
     # pruner = ResNet18_RandomFolding(model, compression_ratio=COMPRESSION_RATIO)
     # pruner = ResNet18_RandomPruning(model, compression_ratio=COMPRESSION_RATIO)
     # pruner = ResNet18_Singleton(model, compression_ratio=COMPRESSION_RATIO)
+
+    pruner = ResNet18_WandaPruning(model, compression_ratio=COMPRESSION_RATIO)
+    pruner.run_calibration(train_loader, DEVICE, num_batches=50)
 
     pruned_model = pruner.apply()
 
@@ -114,7 +118,7 @@ def main():
     repair_bn(pruned_model, train_loader)
 
     # Evaluate after folding
-    print("\n=== Evaluation AFTER compression ===")
+    print("\n=== Evaluation AFTER compression (after REPAIR) ===")
     acc_after = test(pruned_model, val_loader, device=DEVICE)
     pruned_params = count_parameters(pruned_model)
     print(f"🔹 Top-1 Accuracy: {acc_after:.2f}%")
