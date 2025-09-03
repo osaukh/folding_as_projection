@@ -172,9 +172,6 @@ class ResNet18_WandaPruning(BaseResNetCompression):
 
 
 
-import torch
-import torch.nn as nn
-
 class CLIPViT_WandaPruning(BaseCLIPViTCompression):
     """
     Wanda pruning for CLIP ViT MLPs (c_fc + c_proj).
