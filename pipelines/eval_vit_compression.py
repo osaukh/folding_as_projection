@@ -11,6 +11,7 @@ from torchvision import datasets, transforms
 
 from compression.fold import ViT_ModelFolding
 from compression.mag_prune import ViT_MagnitudePruning
+from compression.wanda import ViT_WandaPruning
 
 from utils.tune_utils import retune_layernorm
 from utils.eval_utils import test, count_parameters
@@ -21,7 +22,7 @@ from utils.eval_utils import test, count_parameters
 # -----------------------------------------------------------------------------
 CHECKPOINT_PATH = "../checkpoints/vit-exp/2023-01-14 23_42_12.896 dataset=cifar10 model=vit_exp epochs=200 lr_max=0.056401 model_width=512 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth"
 BATCH_SIZE = 32
-COMPRESSION_RATIO = 0.8
+COMPRESSION_RATIO = 0.2
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 def fix_seed(seed=42):
@@ -76,8 +77,11 @@ if __name__ == "__main__":
 
     # Apply folding
     print("\n[INFO] Applying ResNet18 model compression...")
-    pruner = ViT_ModelFolding(model, compression_ratio=COMPRESSION_RATIO)
+    # pruner = ViT_ModelFolding(model, compression_ratio=COMPRESSION_RATIO)
     # pruner = ViT_MagnitudePruning(model, compression_ratio=COMPRESSION_RATIO, p=2)
+
+    pruner = ViT_WandaPruning(model, compression_ratio=COMPRESSION_RATIO)
+    pruner.run_calibration(train_loader, DEVICE, num_batches=50)
 
     pruned_model = pruner.apply()
 
