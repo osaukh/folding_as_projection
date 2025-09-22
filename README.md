@@ -1,7 +1,8 @@
 # folding_as_projection
 
 ## Checkpoints
-- resnet18 - trained (private)
+- 
+- resnet18 on CIFAR-10 - trained using scripts in `train/run.sh`
 - clipvit-b32-model-soups (M. Wortsman)
   - https://github.com/mlfoundations/model-soups/releases/ 
   - https://arxiv.org/abs/2203.05482 
