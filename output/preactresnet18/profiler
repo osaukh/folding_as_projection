@@ -1,0 +1,59 @@
+Files already downloaded and verified
+Files already downloaded and verified
+=== Evaluation BEFORE compression ===
+Top-1 Accuracy: 95.46%
+Original Parameters: 11172170
+
+=== Resource usage: PreActResNet18 (original) ===
+Latency: 3.692 ms / batch, 0.0288 ms / image
+FLOPs: 557.65 MFLOPs / image (thop: OK)
+Peak memory (forward): 214.30 MB
+
+================================================================================
+=== Method: fold ===
+Model folding complete (with BN folding).
+
+>>> Compression stats for method 'fold':
+Compression time: 9.478 s
+Peak memory during compression: 157.47 MB
+
+=== Evaluation AFTER compression (before REPAIR) ===
+Top-1 Accuracy: 58.29%
+Parameters: 4008346
+Compression Ratio: 64.12%
+
+=== Resource usage: PreActResNet18 (compressed, method=fold, before REPAIR) ===
+Latency: 3.175 ms / batch, 0.0248 ms / image
+FLOPs: 199.05 MFLOPs / image (thop: OK)
+Peak memory (forward): 170.53 MB
+
+[INFO] Re-tuning BatchNorm parameters...
+
+=== Evaluation AFTER compression (after REPAIR) ===
+Top-1 Accuracy: 77.02%
+Parameters: 4008346
+Compression Ratio: 64.12%
+
+================================================================================
+=== Method: mag ===
+
+>>> Compression stats for method 'mag':
+Compression time: 1.772 s
+Peak memory during compression: 115.22 MB
+
+=== Evaluation AFTER compression (before REPAIR) ===
+Top-1 Accuracy: 11.00%
+Parameters: 4008346
+Compression Ratio: 64.12%
+
+=== Resource usage: PreActResNet18 (compressed, method=mag, before REPAIR) ===
+Latency: 3.148 ms / batch, 0.0246 ms / image
+FLOPs: 199.05 MFLOPs / image (thop: OK)
+Peak memory (forward): 169.82 MB
+
+[INFO] Re-tuning BatchNorm parameters...
+
+=== Evaluation AFTER compression (after REPAIR) ===
+Top-1 Accuracy: 51.52%
+Parameters: 4008346
+Compression Ratio: 64.12%

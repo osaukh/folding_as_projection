@@ -1,0 +1,1729 @@
+✅ Vision + classification head loaded
+✅ Vision + classification head loaded
+
+[MODEL] 1/72 model_0.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=73.31
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=45.22
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.2765|33.5814|57.2176
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=17.06
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.1567|35.6580|63.7864
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=4.23
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.8423|34.4090|64.7192
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.71
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=10.4672|110.1247|147.8351
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.33
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=13.3390|95.6723|117.4160
+✅ Vision + classification head loaded
+
+[MODEL] 2/72 model_1.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.23
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=55.70
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.1448|27.0793|42.2291
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=26.73
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.3681|35.2068|57.3894
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=7.14
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.0938|51.3916|124.3618
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.96
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=10.6086|83.8085|110.2656
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.38
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=16.3835|105.0641|139.0905
+✅ Vision + classification head loaded
+
+[MODEL] 3/72 model_10.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.45
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=51.58
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=5.7264|25.3105|39.2222
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=22.12
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.1644|31.1899|84.7379
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=3.59
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.6126|69.9063|120.7473
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.54
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=11.3938|67.6115|102.4864
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.37
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.1717|50.2838|68.0298
+✅ Vision + classification head loaded
+
+[MODEL] 4/72 model_11.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.31
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=59.97
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.0853|32.0953|45.7114
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=33.47
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.0787|43.7488|57.0004
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=8.53
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.7745|39.4435|89.2035
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=1.14
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.5937|81.0606|129.6953
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.39
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=10.2970|93.1543|124.4432
+✅ Vision + classification head loaded
+
+[MODEL] 5/72 model_12.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.12
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=52.45
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.4905|30.7597|48.4499
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=23.60
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.6958|35.4402|52.6782
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=6.47
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.6559|48.6600|132.7082
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=1.08
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.0251|104.4057|161.2544
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.51
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=13.3287|99.7280|135.3048
+✅ Vision + classification head loaded
+
+[MODEL] 6/72 model_13.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.49
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=53.47
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.1995|29.6556|43.5950
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=22.56
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.6138|37.1553|59.6508
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.10
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.4512|49.0364|95.2818
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.88
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.9987|83.7039|142.4114
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.31
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=17.0045|97.3346|128.7053
+✅ Vision + classification head loaded
+
+[MODEL] 7/72 model_14.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.01
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=67.00
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=2.3287|14.0303|20.6997
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=50.55
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=3.3862|18.8189|34.1737
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=26.19
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=4.2927|23.3011|39.4653
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=5.74
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=4.4503|25.5501|55.2257
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=1.20
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=5.3516|44.6148|100.9280
+✅ Vision + classification head loaded
+
+[MODEL] 8/72 model_15.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.29
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=50.40
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.7899|32.0753|52.8024
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=21.20
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.8346|34.8255|59.3276
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=4.33
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.4934|39.4354|95.2458
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.71
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.6316|56.0554|81.7869
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.32
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.4766|82.1488|118.8328
+✅ Vision + classification head loaded
+
+[MODEL] 9/72 model_16.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.55
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=62.02
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.0150|34.7113|45.5862
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=39.41
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.2074|42.6914|61.0022
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=13.67
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.4858|37.4532|60.1917
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=1.87
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=10.8307|80.9635|138.5840
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.38
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=19.0205|94.2813|116.5143
+✅ Vision + classification head loaded
+
+[MODEL] 10/72 model_17.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.46
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=52.20
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.4705|30.1088|47.5125
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=20.82
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.1357|32.7406|54.2479
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=4.96
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.3605|39.5217|104.4289
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.84
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.7486|107.2661|162.2781
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.38
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=11.8167|96.7462|125.3807
+✅ Vision + classification head loaded
+
+[MODEL] 11/72 model_18.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.07
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=61.21
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=5.8877|29.8792|42.7304
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=38.78
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.3331|33.9252|58.5908
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=14.49
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.0774|34.3273|54.1843
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=2.09
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.6233|47.4037|83.3193
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.54
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.3915|59.8103|72.4430
+✅ Vision + classification head loaded
+
+[MODEL] 12/72 model_19.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.27
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=53.00
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.4228|31.8411|48.0383
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=21.84
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.6141|36.8571|53.4372
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.29
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.5939|41.6148|108.5149
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.92
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.4582|96.2700|147.3276
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.33
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=16.4220|96.7773|119.1247
+✅ Vision + classification head loaded
+
+[MODEL] 13/72 model_2.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.30
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=64.81
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=4.5554|22.3523|36.9419
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=52.80
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.9807|32.2386|56.5103
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=37.49
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.8076|40.4063|74.1037
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=16.81
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=10.8157|51.8154|101.6268
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=3.35
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=14.7215|83.6136|169.7560
+✅ Vision + classification head loaded
+
+[MODEL] 14/72 model_20.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.16
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=46.41
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.8865|31.6170|55.7134
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=18.34
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.9396|36.4788|65.3884
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=3.66
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.2731|46.3304|93.3797
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.76
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.8126|86.6224|145.9359
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.31
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=15.2953|93.7469|115.3039
+✅ Vision + classification head loaded
+
+[MODEL] 15/72 model_21.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.98
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=56.52
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.4773|28.6629|44.6594
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=29.31
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.3676|35.4602|47.2249
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=8.63
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.6037|34.1387|68.7436
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=1.06
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.2118|64.9714|92.3472
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.42
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.6930|58.4798|92.0236
+✅ Vision + classification head loaded
+
+[MODEL] 16/72 model_22.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.81
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=51.98
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.7284|33.9973|46.0783
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=22.33
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.3665|37.7636|56.8093
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.61
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.3116|39.1071|105.5880
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.91
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=10.9344|90.9716|129.7775
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.35
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=14.6665|95.5845|116.7861
+✅ Vision + classification head loaded
+
+[MODEL] 17/72 model_23.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=74.83
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=52.57
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.8599|30.6803|52.4593
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=21.96
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.1370|37.9693|64.0182
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.39
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.3991|44.0157|94.3614
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.90
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.8296|88.6120|135.6825
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.30
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=16.7464|93.0423|109.1641
+✅ Vision + classification head loaded
+
+[MODEL] 18/72 model_24.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=77.99
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=64.70
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=4.6033|22.1375|31.8431
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=41.38
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=5.9588|30.5915|54.7860
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=15.65
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.6732|33.0073|52.5238
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=2.69
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.7675|34.9948|91.1662
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.67
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.4183|68.7654|123.3473
+✅ Vision + classification head loaded
+
+[MODEL] 19/72 model_25.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.45
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=55.26
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.3702|28.2171|41.7512
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=24.92
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.1336|37.2030|55.3473
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=6.85
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.3021|59.5849|124.0890
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.94
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.5323|100.6588|155.8490
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.46
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=16.0544|99.4266|130.7640
+✅ Vision + classification head loaded
+
+[MODEL] 20/72 model_26.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=77.55
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=69.10
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=4.3643|20.9804|32.0603
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=54.03
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=5.6793|27.0245|41.9843
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=35.84
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.7575|29.1518|49.9075
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=13.98
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.3068|34.2122|61.1951
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=2.98
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.5676|48.9369|96.3913
+✅ Vision + classification head loaded
+
+[MODEL] 21/72 model_27.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=77.92
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=56.93
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.0399|26.2251|40.3188
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=25.59
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.1195|35.6102|53.4467
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=6.46
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.2597|55.8554|103.3559
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.99
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=10.5261|111.4472|163.8992
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.37
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.5439|85.2031|122.6213
+✅ Vision + classification head loaded
+
+[MODEL] 22/72 model_28.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.56
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=50.61
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.3332|33.5043|53.0827
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=21.58
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.7423|36.2417|63.2737
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.07
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.1310|46.4014|93.7130
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.86
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=11.1038|84.2882|145.1189
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.28
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=19.7573|102.9565|112.5631
+✅ Vision + classification head loaded
+
+[MODEL] 23/72 model_29.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.28
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=55.14
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.9734|28.0451|44.7042
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=28.25
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.9090|34.4343|55.9149
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=8.73
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.7461|57.6581|111.1735
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=1.06
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=10.1355|77.5567|138.0745
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.50
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.8850|69.2686|125.6316
+✅ Vision + classification head loaded
+
+[MODEL] 24/72 model_3.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=77.08
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=55.38
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.1671|27.3714|41.7878
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=25.65
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.6948|35.6525|51.6451
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.81
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.9387|59.4223|119.8757
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.69
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=13.6993|85.1943|131.1051
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.32
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.2584|81.1048|120.1953
+✅ Vision + classification head loaded
+
+[MODEL] 25/72 model_30.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.20
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=55.43
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.6292|30.9063|48.1616
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=25.42
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.5306|37.7851|67.7701
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.84
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.1730|49.5985|91.0664
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.76
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.5744|45.0811|75.1102
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.23
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.9341|53.4077|83.6854
+✅ Vision + classification head loaded
+
+[MODEL] 26/72 model_31.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=74.30
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=62.29
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.7941|30.5587|52.3092
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=44.71
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.3929|40.4442|60.0181
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=23.51
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.2857|40.4727|66.3044
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=5.66
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.7867|38.1487|60.5396
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=1.47
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.5923|43.5752|116.3722
+✅ Vision + classification head loaded
+
+[MODEL] 27/72 model_32.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=78.75
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=68.02
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=2.8794|17.4964|26.5946
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=47.45
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=5.2031|26.1549|45.1013
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=21.48
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.5271|29.0355|49.0357
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=4.12
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.5193|47.4776|80.1790
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.87
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.0149|49.3113|90.3353
+✅ Vision + classification head loaded
+
+[MODEL] 28/72 model_33.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=74.56
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=50.40
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.8477|31.3367|43.4137
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=20.28
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.8598|37.9069|49.0865
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.05
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.5072|36.0529|94.2073
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.92
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.3918|86.3522|147.6558
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.33
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=13.8949|92.3625|114.8884
+✅ Vision + classification head loaded
+
+[MODEL] 29/72 model_34.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=78.79
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=68.38
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=4.2721|17.9294|32.5985
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=48.83
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.4021|28.0761|46.5993
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=29.03
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.9236|35.0248|48.4175
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=10.10
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.3356|40.9645|82.0713
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=1.78
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=11.0849|75.8933|122.1252
+✅ Vision + classification head loaded
+
+[MODEL] 30/72 model_35.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=74.31
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=52.43
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.0955|30.8588|47.0153
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=23.47
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.2555|37.1184|59.9763
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.90
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.2485|49.7159|113.5786
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.94
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.5892|88.1253|146.5882
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.35
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=16.2342|102.0623|122.6009
+✅ Vision + classification head loaded
+
+[MODEL] 31/72 model_36.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.78
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=54.16
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.3938|29.3472|47.5622
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=22.09
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.3153|35.0855|63.0315
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.22
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.5923|57.3837|121.7343
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.80
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.5461|108.0828|137.4261
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.31
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=12.9036|89.9320|113.7753
+✅ Vision + classification head loaded
+
+[MODEL] 32/72 model_37.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=74.50
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=46.08
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.5167|32.1671|49.6372
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=16.82
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.6970|37.1898|66.5698
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=3.07
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.5286|39.3499|102.2374
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.61
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.6459|95.8822|151.2528
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.30
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.0876|82.2845|101.9801
+✅ Vision + classification head loaded
+
+[MODEL] 33/72 model_38.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.61
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=52.71
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.9913|32.3576|49.0958
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=23.86
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.6817|39.2592|61.9824
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=6.35
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.6803|42.6331|92.9993
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.94
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.5029|84.8163|133.8850
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.32
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=17.7260|98.7298|124.0577
+✅ Vision + classification head loaded
+
+[MODEL] 34/72 model_39.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.35
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=62.58
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=5.1765|22.7197|39.7692
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=41.85
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.3123|31.1134|54.2674
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=15.43
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.0917|33.4659|56.2227
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=2.35
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.5879|70.3302|120.0672
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.43
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=16.3937|82.5383|102.1462
+✅ Vision + classification head loaded
+
+[MODEL] 35/72 model_4.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=73.47
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=50.48
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.0556|31.2613|45.4490
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=22.07
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.7314|36.8509|57.6108
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.61
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.5143|48.8905|108.3105
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.92
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.6380|83.8828|143.1118
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.34
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=18.1123|104.1101|120.9948
+✅ Vision + classification head loaded
+
+[MODEL] 36/72 model_40.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=77.35
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=64.56
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=5.0604|23.0252|32.7758
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=40.87
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.5473|30.7896|51.3321
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=17.36
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.1890|34.5024|55.5637
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=2.65
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=11.1412|71.1253|115.4298
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.67
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=13.3209|74.7687|97.2369
+✅ Vision + classification head loaded
+
+[MODEL] 37/72 model_41.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=73.65
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=49.73
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.2065|29.4196|46.5594
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=20.25
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.8326|34.4098|65.9437
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=4.52
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.9323|52.2314|102.9264
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.80
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.5910|95.2148|163.4445
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.29
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=20.0755|111.5218|148.8502
+✅ Vision + classification head loaded
+
+[MODEL] 38/72 model_42.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=77.96
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=55.79
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=1.9122|10.9213|17.5871
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=22.17
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=2.2011|12.6317|25.1017
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=2.44
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=2.8784|32.9677|67.4671
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.40
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=2.1117|16.1805|36.5391
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.11
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=2.3218|13.0117|26.4502
+✅ Vision + classification head loaded
+
+[MODEL] 39/72 model_43.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=78.94
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=60.98
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=5.6736|25.7891|38.0733
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=32.16
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.7336|35.0741|48.1035
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=8.74
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.6574|57.9350|126.9618
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=1.26
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=12.4491|104.2746|162.8968
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.42
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.8442|89.6941|137.0478
+✅ Vision + classification head loaded
+
+[MODEL] 40/72 model_44.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=79.08
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=69.04
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=4.9029|21.9952|32.3734
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=47.31
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.8729|31.1186|46.4870
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=24.11
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.8994|33.8274|57.0937
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=5.98
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.0545|33.9577|76.4725
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.89
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.2399|67.0977|114.9078
+✅ Vision + classification head loaded
+
+[MODEL] 41/72 model_45.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.63
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=52.93
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.7830|33.1302|47.2406
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=22.40
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.3389|36.5697|58.2576
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=4.54
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.1099|46.9041|108.7363
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.73
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.9671|77.2689|131.4019
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.29
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.8940|73.9828|105.9570
+✅ Vision + classification head loaded
+
+[MODEL] 42/72 model_46.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=77.37
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=53.53
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.8193|28.7798|48.8996
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=23.31
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.1036|34.7664|60.7131
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.97
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.6236|50.1523|99.4256
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.90
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=12.0707|111.4433|168.6207
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.29
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=13.0839|88.2614|116.8678
+✅ Vision + classification head loaded
+
+[MODEL] 43/72 model_47.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=77.27
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=55.64
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.5064|28.1021|45.6139
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=24.86
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.4004|32.7633|56.7052
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.21
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.0620|40.8675|99.0222
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.68
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=10.5990|71.5745|105.5646
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.28
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.2884|66.8733|105.0011
+✅ Vision + classification head loaded
+
+[MODEL] 44/72 model_48.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=78.38
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=58.07
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.2756|23.5847|41.1301
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=27.86
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.1048|33.6817|51.0249
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=7.47
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.0235|41.8106|107.2259
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=1.17
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.7998|81.6491|118.1369
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.40
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.9042|98.7632|153.4881
+✅ Vision + classification head loaded
+
+[MODEL] 45/72 model_49.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.70
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=52.27
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.6301|29.2632|46.6469
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=21.23
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.8705|35.2406|57.6961
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=4.97
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.9948|42.2013|101.8371
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.85
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.2154|105.8075|134.9549
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.31
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=12.6911|97.0092|122.6914
+✅ Vision + classification head loaded
+
+[MODEL] 46/72 model_5.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=73.47
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=50.48
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.3342|32.7425|51.1417
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=22.07
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.6450|36.9170|62.1573
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.61
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.5834|51.6431|111.6356
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.92
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.7010|81.1248|130.6931
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.34
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=18.1365|101.7356|128.2040
+✅ Vision + classification head loaded
+
+[MODEL] 47/72 model_50.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=77.61
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=60.94
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=5.4241|22.6296|35.9493
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=34.36
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.4321|30.3992|48.6782
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=12.28
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.9448|38.2179|99.8220
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=1.71
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=10.0038|72.4647|116.2912
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.57
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=13.6048|73.7719|107.4627
+✅ Vision + classification head loaded
+
+[MODEL] 48/72 model_51.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.33
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=51.25
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.1902|29.5292|51.0590
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=21.18
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.0223|37.7567|58.2736
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.24
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.6540|40.3350|89.3119
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.90
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.5508|101.8128|151.2133
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.32
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=12.2697|91.6671|124.3333
+✅ Vision + classification head loaded
+
+[MODEL] 49/72 model_52.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=74.97
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=44.95
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.3668|33.7746|51.9135
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=15.75
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.9246|37.5414|57.9691
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=2.91
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.8995|52.1696|104.7602
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.64
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.4441|55.7429|145.0637
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.30
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=11.2741|82.1306|111.7052
+✅ Vision + classification head loaded
+
+[MODEL] 50/72 model_53.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=77.14
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=69.14
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=4.6062|21.7213|35.9889
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=55.53
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=5.7874|26.0464|43.9121
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=37.37
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.6792|32.2861|53.4044
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=15.89
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.6759|40.4531|60.3566
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=3.34
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.2388|51.4264|75.3846
+✅ Vision + classification head loaded
+
+[MODEL] 51/72 model_54.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=77.77
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=56.29
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.3267|24.9090|41.4888
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=26.14
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.8398|34.1885|55.6971
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=6.45
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.8647|45.2307|98.6813
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=1.04
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.5738|73.6399|156.0509
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.36
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=13.5832|98.5891|126.3512
+✅ Vision + classification head loaded
+
+[MODEL] 52/72 model_55.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.19
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=52.07
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=4.8946|21.6678|37.5344
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=19.44
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=5.4450|27.3000|41.7145
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=1.83
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.8932|71.7701|119.6862
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.34
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=11.4566|73.1192|103.8244
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.21
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.8555|64.5845|114.4191
+✅ Vision + classification head loaded
+
+[MODEL] 53/72 model_56.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=77.14
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=58.79
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=5.7529|26.3365|36.7962
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=30.20
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.1331|32.6419|55.1405
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=8.83
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.4195|41.3939|61.5357
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.86
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=11.0295|63.7122|98.1000
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.36
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=13.4486|71.5163|95.9543
+✅ Vision + classification head loaded
+
+[MODEL] 54/72 model_57.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=77.48
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=53.20
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.3190|28.8275|44.2038
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=23.23
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.6879|37.4239|58.8709
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=6.22
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.6195|38.9031|101.4211
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.97
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.1245|105.4605|158.7671
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.31
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=11.1907|85.8885|109.8251
+✅ Vision + classification head loaded
+
+[MODEL] 55/72 model_58.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=74.69
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=44.61
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.5011|30.9750|50.1320
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=12.60
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.9964|30.2696|60.4232
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=2.08
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.1485|47.7251|92.4925
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.43
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.3320|52.8060|62.1251
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.25
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.9163|37.6430|56.8448
+✅ Vision + classification head loaded
+
+[MODEL] 56/72 model_59.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=77.39
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=61.62
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=5.9063|25.2674|42.5158
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=35.47
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.1841|34.6838|51.6157
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=15.42
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.5985|35.7510|102.5752
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=2.78
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=10.5087|68.3898|115.3285
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.61
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=11.5974|83.0825|104.6091
+✅ Vision + classification head loaded
+
+[MODEL] 57/72 model_6.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.56
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=52.22
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.2474|31.5787|49.2967
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=21.97
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.2393|37.4948|59.7531
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.39
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.9260|36.4775|87.2300
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.87
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=10.9231|93.3501|133.9293
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.35
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=14.8788|93.2121|120.5974
+✅ Vision + classification head loaded
+
+[MODEL] 58/72 model_60.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=78.28
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=57.84
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.1865|26.6409|41.9451
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=28.17
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.3307|34.2135|61.0917
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=8.71
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.4754|40.7937|117.6496
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=1.28
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.5469|91.8895|150.6179
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.53
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.1607|95.4116|141.8741
+✅ Vision + classification head loaded
+
+[MODEL] 59/72 model_61.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.05
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=46.08
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.8812|34.6817|53.8527
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=16.12
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.6435|38.1770|57.2733
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=2.91
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.7032|56.9867|104.4871
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.67
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.0480|86.5134|142.8729
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.30
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=14.7485|93.5854|122.9445
+✅ Vision + classification head loaded
+
+[MODEL] 60/72 model_62.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.58
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=51.32
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.9826|31.3461|48.4973
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=21.78
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.5728|34.2552|65.6394
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=4.90
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.7679|37.3775|102.8890
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.80
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.7368|79.3940|130.9669
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.30
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=12.0528|85.4602|121.0725
+✅ Vision + classification head loaded
+
+[MODEL] 61/72 model_63.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=78.19
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=58.82
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.0531|25.5160|39.8585
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=32.27
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.3385|32.0341|47.2692
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=11.33
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.8367|48.7729|157.3115
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=1.36
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=10.7063|80.1722|138.7225
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.58
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.2169|72.5318|152.6014
+✅ Vision + classification head loaded
+
+[MODEL] 62/72 model_64.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=74.45
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=44.39
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.4592|37.4793|60.3857
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=16.94
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.6852|38.4415|68.8096
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=3.43
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.6469|36.7977|74.1849
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.72
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.6089|100.8816|163.7853
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.35
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=12.7043|91.2200|123.6759
+✅ Vision + classification head loaded
+
+[MODEL] 63/72 model_65.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=74.21
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=52.63
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.4705|28.7242|45.2253
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=23.70
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.7404|34.0588|61.9459
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.88
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.7411|49.6059|123.2665
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.94
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.5283|82.7334|129.1989
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.39
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=15.7286|96.2266|115.0788
+✅ Vision + classification head loaded
+
+[MODEL] 64/72 model_66.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.69
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=58.20
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.1479|30.3455|45.2501
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=31.36
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.5052|36.6228|58.3059
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=9.70
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.1123|34.5222|58.3412
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=1.16
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.6214|45.1526|78.1127
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.33
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=10.3330|90.9171|128.1571
+✅ Vision + classification head loaded
+
+[MODEL] 65/72 model_67.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.52
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=53.40
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.7266|31.2824|43.3553
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=22.76
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.2974|37.3198|61.2657
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.67
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.9166|41.8087|108.9101
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.98
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.0729|92.8027|165.1910
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.37
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=13.2537|93.0056|121.8664
+✅ Vision + classification head loaded
+
+[MODEL] 66/72 model_68.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=74.67
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=50.29
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.2756|31.8300|50.4074
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=21.19
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.9950|37.8688|61.5055
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.57
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.7937|51.0648|109.4096
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.92
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.7548|84.0440|127.7445
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.34
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=21.3608|111.2868|146.6281
+✅ Vision + classification head loaded
+
+[MODEL] 67/72 model_69.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=78.28
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=60.18
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=5.8974|24.6341|40.8308
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=29.88
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.9678|37.1524|50.6685
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=8.32
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.7880|47.2006|84.6660
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=1.17
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.7814|64.1446|143.4782
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.47
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.6064|91.6446|139.3185
+✅ Vision + classification head loaded
+
+[MODEL] 68/72 model_7.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.76
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=53.32
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.0064|30.3253|44.4935
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=23.25
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.9940|34.6500|56.7962
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.94
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.8415|45.4759|82.1135
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=1.00
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.9594|82.9529|132.2717
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.39
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=16.8673|98.2385|113.6971
+✅ Vision + classification head loaded
+
+[MODEL] 69/72 model_70.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=78.51
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=66.32
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=5.5432|20.8474|34.7943
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=46.39
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=6.6615|28.0745|43.9136
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=23.42
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.2311|35.1424|52.6469
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=5.49
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.9866|55.2225|97.4726
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=1.10
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.0966|69.0176|114.0202
+✅ Vision + classification head loaded
+
+[MODEL] 70/72 model_71.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=74.07
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=51.62
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.6971|32.3924|50.6811
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=23.33
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.8200|36.5842|63.0477
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=5.81
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.3624|50.8755|119.6305
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.93
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=9.3506|86.5585|119.7044
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.34
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=17.7682|103.2256|119.4153
+✅ Vision + classification head loaded
+
+[MODEL] 71/72 model_8.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=75.52
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=52.34
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.2110|32.0253|55.2795
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=22.43
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.8347|38.6933|61.3442
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=4.90
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.1753|40.6022|86.2271
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.85
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.8405|48.5397|144.3103
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.35
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=8.1098|58.1981|91.6968
+✅ Vision + classification head loaded
+
+[MODEL] 72/72 model_9.pt
+RATIO=0.0 EVENT=BASE params=151790313 acc=76.58
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.1 EVENT=PRUNE params=146109561 acc=54.62
+[SHARPNESS] RATIO=0.1 METHOD=mag-l1 batches=8 iters=5 Sharpness=5.6837|27.3380|40.0414
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.2 EVENT=PRUNE params=140447253 acc=24.69
+[SHARPNESS] RATIO=0.2 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.0470|31.7105|55.3100
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.3 EVENT=PRUNE params=134784945 acc=6.55
+[SHARPNESS] RATIO=0.3 METHOD=mag-l1 batches=8 iters=5 Sharpness=10.1524|86.5668|152.7169
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.4 EVENT=PRUNE params=129122637 acc=0.83
+[SHARPNESS] RATIO=0.4 METHOD=mag-l1 batches=8 iters=5 Sharpness=11.6346|90.7657|134.0440
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+RATIO=0.5 EVENT=PRUNE params=123460329 acc=0.38
+[SHARPNESS] RATIO=0.5 METHOD=mag-l1 batches=8 iters=5 Sharpness=7.3618|93.0010|148.4041

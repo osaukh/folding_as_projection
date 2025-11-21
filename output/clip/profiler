@@ -1,0 +1,47 @@
+✅ Vision + classification head loaded
+
+=== Evaluation BEFORE compression ===
+Original Parameters: 151790313
+
+=== Resource usage: CLIP ViT-B/32 (original) ===
+Latency: 19.851 ms / batch, 0.6203 ms / image
+FLOPs: 2946.76 MFLOPs / image (thop: OK)
+Peak memory (forward): 684.18 MB
+
+================================================================================
+=== Method: fold ===
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+
+>>> Compression stats for method 'fold':
+Compression time: 92.833 s
+Peak memory during compression: 681.23 MB
+
+=== Evaluation AFTER compression (before LN re-tune) ===
+🔹 Top-1 Accuracy: 46.57%
+Pruned Parameters: 140447253
+🔥 Compression Ratio: 7.47%
+
+=== Resource usage: CLIP ViT-B/32 (compressed, method=fold, before LN re-tune) ===
+Latency: 17.343 ms / batch, 0.5420 ms / image
+FLOPs: 2379.98 MFLOPs / image (thop: OK)
+Peak memory (forward): 636.97 MB
+
+================================================================================
+=== Method: mag ===
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+
+>>> Compression stats for method 'mag':
+Compression time: 2.627 s
+Peak memory during compression: 625.61 MB
+
+=== Evaluation AFTER compression (before LN re-tune) ===
+🔹 Top-1 Accuracy: 37.50%
+Pruned Parameters: 140447253
+🔥 Compression Ratio: 7.47%
+
+=== Resource usage: CLIP ViT-B/32 (compressed, method=mag, before LN re-tune) ===
+Latency: 17.372 ms / batch, 0.5429 ms / image
+FLOPs: 2379.98 MFLOPs / image (thop: OK)
+Peak memory (forward): 637.88 MB

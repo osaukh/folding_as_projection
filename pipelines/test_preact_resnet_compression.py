@@ -14,6 +14,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from models.preact_resnet import PreActResNet18
 from compression.fold import PreActResNet18_ModelFolding
 from compression.mag_prune import PreActResNet18_MagnitudePruning
+
 from utils.eval_utils import test, count_parameters, get_outputs
 from utils.tune_utils import repair_bn
 

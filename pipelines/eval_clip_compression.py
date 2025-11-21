@@ -21,7 +21,7 @@ from utils.eval_utils import test, count_parameters
 # -----------------------------------------------------------------------------
 CHECKPOINT_PATH = "../checkpoints/clipvit-b32-model-soups/model_1.pt"
 BATCH_SIZE = 32
-COMPRESSION_RATIO = 0.2
+COMPRESSION_RATIO = 0.1
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 def fix_seed(seed=42):
@@ -79,14 +79,14 @@ def main():
     acc_after = test(pruned_model, val_loader, device=DEVICE)
     print(f"🔹 Top-1 Accuracy: {acc_after:.2f}%")
 
-    # Re-tune LayerNorm
-    print("\n[INFO] Re-tuning LayerNorm parameters...")
-    retune_layernorm(pruned_model, val_loader, device=DEVICE, lr=1e-4)
-
-    # Evaluate AFTER LN re-tune
-    print("\n=== Evaluation AFTER compression ===")
-    acc_after_ln = test(pruned_model, val_loader, device=DEVICE)
-    print(f"🔹 Top-1 Accuracy (after LN re-tune): {acc_after_ln:.2f}%")
+    # # Re-tune LayerNorm
+    # print("\n[INFO] Re-tuning LayerNorm parameters...")
+    # retune_layernorm(pruned_model, val_loader, device=DEVICE, lr=1e-4)
+    #
+    # # Evaluate AFTER LN re-tune
+    # print("\n=== Evaluation AFTER compression ===")
+    # acc_after_ln = test(pruned_model, val_loader, device=DEVICE)
+    # print(f"🔹 Top-1 Accuracy (after LN re-tune): {acc_after_ln:.2f}%")
     print(f"Pruned Parameters: {pruned_params}")
     print(f"🔥 Compression Ratio: {(original_params - pruned_params) / original_params:.2%}")
 

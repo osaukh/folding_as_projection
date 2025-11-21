@@ -13,6 +13,7 @@ from models.preact_resnet import PreActResNet18
 from compression.fold import PreActResNet18_ModelFolding
 from compression.mag_prune import PreActResNet18_MagnitudePruning
 
+
 from utils.eval_utils import test, count_parameters
 from utils.tune_utils import repair_bn
 
@@ -21,7 +22,7 @@ CHECKPOINT_PATH = "../checkpoints/preactresnet18/2023-01-15 14:02:36.368 dataset
 # CHECKPOINT_PATH = "../checkpoints/preactresnet18/2023-01-15 17_22_34.404 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.0551324 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth"
 # CHECKPOINT_PATH = "../checkpoints/preactresnet18/2023-01-15 14:03:04.108 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.2728608 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth"
 BATCH_SIZE = 128
-COMPRESSION_RATIO = 0.3
+COMPRESSION_RATIO = 0.4
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 def fix_seed(seed=42):

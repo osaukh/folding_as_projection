@@ -1,0 +1,2002 @@
+Files already downloaded and verified
+Files already downloaded and verified
+
+2023-01-15 14:02:36.368 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.4633774 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 1/50 2023-01-15 14:02:36.368 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.4633774 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.46
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=92.32
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=93.32
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0114|0.0678|0.1614
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=87.88
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=90.76
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0236|0.1313|0.3028
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=79.28
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=85.19
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0454|0.2456|0.5533
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=58.30
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=77.07
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0684|0.3683|0.8231
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=32.24
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=55.18
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.1121|0.6034|1.3267
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=22.32
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=39.66
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.1364|0.7390|1.6520
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=12.52
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=20.88
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.1643|0.8602|1.8358
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=9.70
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=12.75
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.1630|0.8404|1.7180
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.53
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=9.73
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.1558|0.7659|1.5669
+
+2023-01-15 14:02:36.863 dataset=cifar10 model=resnet18 epochs=200 lr_max=2.4107936 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 2/50 2023-01-15 14:02:36.863 dataset=cifar10 model=resnet18 epochs=200 lr_max=2.4107936 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.28
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=93.10
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=92.83
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0393|0.2398|0.5757
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=86.63
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=89.63
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0667|0.3763|0.8969
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=66.57
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=86.60
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0931|0.5290|1.2177
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=52.97
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=77.19
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.1436|0.7947|1.8511
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=43.53
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=66.19
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.2294|1.2710|2.9144
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=31.14
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=47.16
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.2334|1.2544|2.7649
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=17.74
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=26.30
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.1352|0.7161|1.5498
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=16.12
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=16.06
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0846|0.4290|0.8787
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.02
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=9.17
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0113|0.0502|0.0955
+
+2023-01-15 14:02:37.216 dataset=cifar10 model=resnet18 epochs=200 lr_max=4.8966684 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 3/50 2023-01-15 14:02:37.216 dataset=cifar10 model=resnet18 epochs=200 lr_max=4.8966684 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.57
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=93.27
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=91.11
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.1682|1.0230|2.6416
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=89.11
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=87.01
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.2722|1.6340|4.0171
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=75.06
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=81.63
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.3730|2.1512|5.1392
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=66.37
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=74.42
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.5315|3.0633|7.2071
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=40.71
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=60.22
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.5806|3.2599|7.3946
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=21.49
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=41.16
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.6376|3.4444|7.5413
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=12.47
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=24.63
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.4534|2.3633|5.0824
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=16.57
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=14.71
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.2517|1.3017|2.7577
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.69
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=9.81
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0635|0.2972|0.5702
+
+2023-01-15 14:03:02.241 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.114267 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 4/50 2023-01-15 14:03:02.241 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.114267 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=87.37
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=84.04
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=84.24
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0673|0.3769|0.8951
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=76.82
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=80.62
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0713|0.3965|0.9209
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=76.35
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=79.39
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0706|0.3925|0.9361
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=56.98
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=72.43
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0759|0.4224|1.0120
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=42.25
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=64.20
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0866|0.4924|1.1685
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=24.83
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=53.63
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0793|0.4343|1.0037
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=12.89
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=36.30
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0874|0.4843|1.1084
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=10.45
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=21.51
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0942|0.4975|1.0795
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=14.42
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=15.32
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0827|0.4279|0.9096
+
+2023-01-15 14:03:04.108 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.2728608 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 5/50 2023-01-15 14:03:04.108 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.2728608 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=85.91
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=82.66
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=83.81
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0929|0.4953|1.0872
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=77.99
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=82.37
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.1001|0.5350|1.2132
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=68.73
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=78.16
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.1021|0.5510|1.2374
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=55.69
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=74.88
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.1077|0.5689|1.2763
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=43.60
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=70.04
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.1081|0.5693|1.2468
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=44.47
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=55.91
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.1279|0.6755|1.4825
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=29.01
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=48.89
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.1264|0.6728|1.4732
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=16.22
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=32.20
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.1267|0.6599|1.3921
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=14.00
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=14.14
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.1487|0.7711|1.6399
+
+2023-01-15 14:03:04.734 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.5589934 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 6/50 2023-01-15 14:03:04.734 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.5589934 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=88.24
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=84.16
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=86.39
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0348|0.1953|0.4526
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=71.53
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=83.00
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0289|0.1589|0.3695
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=67.29
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=78.51
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0285|0.1570|0.3711
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=50.25
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=68.61
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0389|0.2122|0.4839
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=37.57
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=62.62
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0327|0.1796|0.4158
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=26.01
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=49.73
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0352|0.1877|0.4258
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=20.29
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=30.98
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0449|0.2391|0.5201
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=11.61
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=14.48
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0554|0.2926|0.6164
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.69
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=11.06
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0252|0.1198|0.2386
+
+2023-01-15 14:03:04.984 dataset=cifar10 model=resnet18 epochs=200 lr_max=1.0501014 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 7/50 2023-01-15 14:03:04.984 dataset=cifar10 model=resnet18 epochs=200 lr_max=1.0501014 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.35
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=92.43
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=93.39
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0128|0.0743|0.1815
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=87.17
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=90.40
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0277|0.1545|0.3549
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=77.97
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=86.53
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0473|0.2625|0.5937
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=67.61
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=78.38
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0621|0.3406|0.7603
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=27.28
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=56.17
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.1090|0.5893|1.3089
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=25.17
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=40.05
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.1259|0.6691|1.4661
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=14.75
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=25.20
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0991|0.5185|1.0991
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=9.89
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=14.26
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0628|0.3219|0.6765
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.22
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=8.76
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0100|0.0469|0.0921
+
+2023-01-15 14:03:05.066 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.1035007 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 8/50 2023-01-15 14:03:05.066 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.1035007 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=87.70
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=83.23
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=84.76
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0635|0.3547|0.8569
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=76.18
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=82.46
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0665|0.3706|0.8959
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=67.44
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=79.10
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0698|0.3934|0.9373
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=55.43
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=74.25
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0740|0.4124|0.9911
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=40.79
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=64.67
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0780|0.4387|1.0431
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=30.82
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=56.87
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0817|0.4488|1.0930
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=18.99
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=44.31
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0812|0.4426|1.0255
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=13.96
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=27.54
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0921|0.4951|1.0868
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.63
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=8.19
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0942|0.4814|0.9851
+
+2023-01-15 14:03:05.527 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.9708619 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 9/50 2023-01-15 14:03:05.527 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.9708619 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.71
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=86.06
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=92.93
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0152|0.0851|0.1944
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=79.38
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=89.18
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0182|0.0993|0.2218
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=67.00
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=56.22
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.1049|0.5879|1.3521
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=57.24
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=52.92
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0692|0.3932|0.9121
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=36.53
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=34.30
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0697|0.3787|0.8433
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=23.81
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=28.46
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0306|0.1630|0.3589
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=10.16
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=17.10
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0484|0.2525|0.5222
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=9.67
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=11.52
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0298|0.1496|0.3050
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.81
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=9.38
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0412|0.1874|0.3584
+
+2023-01-15 14:03:05.585 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.6148318 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 10/50 2023-01-15 14:03:05.585 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.6148318 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.82
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=93.41
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=91.62
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0189|0.1052|0.2424
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=87.24
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=88.10
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0268|0.1485|0.3389
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=52.70
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=76.95
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0364|0.1982|0.4542
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=41.73
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=62.04
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0359|0.1840|0.3895
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=43.95
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=39.29
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0381|0.2020|0.4335
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=25.08
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=24.26
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0370|0.2002|0.4398
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=14.02
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=16.22
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0436|0.2209|0.4633
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=10.11
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=8.80
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0276|0.1272|0.2411
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.06
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=11.38
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0156|0.0687|0.1308
+
+2023-01-15 14:03:05.624 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.2187415 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 11/50 2023-01-15 14:03:05.624 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.2187415 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=87.15
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=82.49
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=84.46
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0698|0.3825|0.8613
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=75.22
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=82.52
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0730|0.3992|0.9171
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=70.46
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=80.82
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0719|0.3883|0.8866
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=63.61
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=77.34
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0716|0.3913|0.8709
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=41.80
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=72.26
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0786|0.4271|0.9720
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=38.92
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=62.10
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0885|0.4785|1.0892
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=29.13
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=47.09
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0947|0.5129|1.1524
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=21.84
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=29.62
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0895|0.4664|1.0063
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.18
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=13.34
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0927|0.4600|0.9571
+
+2023-01-15 14:03:06.226 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.3877345 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 12/50 2023-01-15 14:03:06.226 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.3877345 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.51
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=92.92
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=93.14
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0157|0.0942|0.2279
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=87.12
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=90.84
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0275|0.1530|0.3544
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=70.74
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=84.84
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0500|0.2746|0.6249
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=50.51
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=77.12
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0741|0.3999|0.8805
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=29.40
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=59.15
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.1161|0.6234|1.3686
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=22.36
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=37.68
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.1716|0.9091|1.9550
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=11.51
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=19.47
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.2226|1.1638|2.4684
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=9.80
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=8.60
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.2920|1.5221|3.2858
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.75
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=8.25
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.1852|0.9189|1.8192
+
+2023-01-15 14:03:06.526 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.4982515 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 13/50 2023-01-15 14:03:06.526 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.4982515 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.90
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=91.70
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=88.22
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0278|0.1552|0.3547
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=89.47
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=89.85
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0249|0.1409|0.3243
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=72.49
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=72.05
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0396|0.2162|0.4901
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=65.62
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=55.25
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0655|0.3588|0.8083
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=41.09
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=39.79
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0361|0.1888|0.4013
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=26.51
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=27.87
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0219|0.1118|0.2343
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=12.05
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=15.91
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0209|0.1060|0.2230
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=11.89
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=10.10
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0223|0.1142|0.2319
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.93
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=9.46
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0454|0.2215|0.4337
+
+2023-01-15 14:03:06.535 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.3615123 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 14/50 2023-01-15 14:03:06.535 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.3615123 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=89.50
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=86.20
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=87.61
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0268|0.1451|0.3370
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=76.97
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=84.06
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0248|0.1378|0.3172
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=72.27
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=78.88
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0256|0.1413|0.3292
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=62.35
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=70.69
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0299|0.1655|0.3877
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=40.50
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=57.98
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0293|0.1591|0.3614
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=23.44
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=43.81
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0295|0.1613|0.3582
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=14.36
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=26.86
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0342|0.1867|0.4257
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=13.80
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=15.44
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0401|0.2122|0.4662
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=9.99
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=11.95
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0235|0.1201|0.2475
+
+2023-01-15 14:03:10.113 dataset=cifar10 model=resnet18 epochs=200 lr_max=1.4403987 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 15/50 2023-01-15 14:03:10.113 dataset=cifar10 model=resnet18 epochs=200 lr_max=1.4403987 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.53
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=92.50
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=93.19
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0163|0.0988|0.2326
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=86.07
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=90.32
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0317|0.1784|0.4223
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=73.21
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=86.81
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0495|0.2686|0.6260
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=47.08
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=77.85
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0783|0.4267|0.9741
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=39.54
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=66.32
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0917|0.5008|1.1297
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=20.18
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=33.48
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.1626|0.8708|1.9525
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=14.26
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=22.61
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0951|0.5023|1.1014
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=10.61
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=12.06
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0754|0.3936|0.8455
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.30
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=8.53
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0526|0.2565|0.5196
+
+2023-01-15 14:03:10.443 dataset=cifar10 model=resnet18 epochs=200 lr_max=4.4617205 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 16/50 2023-01-15 14:03:10.443 dataset=cifar10 model=resnet18 epochs=200 lr_max=4.4617205 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=89.43
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=86.10
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=87.27
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0267|0.1428|0.3134
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=76.22
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=84.37
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0240|0.1273|0.2743
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=65.88
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=79.53
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0248|0.1326|0.2844
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=42.15
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=74.19
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0241|0.1274|0.2816
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=28.21
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=66.26
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0226|0.1174|0.2526
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=17.87
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=53.62
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0232|0.1246|0.2699
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=17.53
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=32.82
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0258|0.1377|0.3062
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=10.18
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=16.41
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0248|0.1344|0.2922
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.48
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=9.44
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0168|0.0870|0.1821
+
+2023-01-15 14:03:22.110 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.6467948 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 17/50 2023-01-15 14:03:22.110 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.6467948 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=87.91
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=85.12
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=86.08
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0713|0.3726|0.8123
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=79.46
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=84.41
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0738|0.3917|0.8493
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=75.83
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=82.73
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0756|0.3964|0.8697
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=63.89
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=77.74
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0818|0.4276|0.9239
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=51.51
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=73.37
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0871|0.4647|1.0136
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=40.08
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=60.88
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0942|0.4965|1.0645
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=31.54
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=43.51
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.1164|0.6079|1.3057
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=14.45
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=28.09
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.1126|0.5800|1.2121
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=12.95
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=12.31
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.1793|0.8993|1.8883
+
+2023-01-15 14:03:23.164 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.3603587 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 18/50 2023-01-15 14:03:23.164 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.3603587 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.74
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=93.55
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=90.97
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0216|0.1253|0.3050
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=79.12
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=84.32
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0289|0.1637|0.4025
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=63.28
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=80.38
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0234|0.1243|0.2662
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=56.09
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=64.06
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0369|0.2008|0.4582
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=38.02
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=51.86
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0295|0.1538|0.3248
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=12.87
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=31.12
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0230|0.1193|0.2528
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=17.17
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=21.84
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0119|0.0593|0.1181
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=10.68
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=13.86
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0192|0.0959|0.1905
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.37
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=8.83
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0056|0.0252|0.0469
+
+2023-01-15 14:03:23.675 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.4456916 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 19/50 2023-01-15 14:03:23.675 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.4456916 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.85
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=93.56
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=91.13
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0208|0.1170|0.2707
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=86.83
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=76.03
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0509|0.2934|0.7153
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=69.71
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=83.54
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0261|0.1392|0.3049
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=64.88
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=60.40
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0419|0.2264|0.5128
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=42.10
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=44.25
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0255|0.1306|0.2704
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=21.58
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=27.81
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0190|0.0965|0.2005
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=14.46
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=19.74
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0291|0.1507|0.3226
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=12.48
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=12.28
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0171|0.0851|0.1695
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=11.74
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=7.82
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0167|0.0757|0.1444
+
+2023-01-15 14:03:23.825 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.1117987 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 20/50 2023-01-15 14:03:23.825 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.1117987 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.07
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=91.28
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=91.36
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0208|0.1238|0.3011
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=74.12
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=88.42
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0337|0.1909|0.4576
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=65.09
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=79.67
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0578|0.3214|0.7461
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=43.86
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=71.91
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0812|0.4485|1.0575
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=36.66
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=54.36
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.1112|0.6197|1.4149
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=19.90
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=33.36
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.1764|0.9627|2.1002
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=14.22
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=18.17
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.1791|0.9640|2.1560
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=10.74
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=10.59
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.2145|1.1320|2.3858
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=9.98
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=7.21
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.2088|1.0956|2.2901
+
+2023-01-15 14:03:24.112 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.33782 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 21/50 2023-01-15 14:03:24.112 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.33782 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=88.76
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=84.84
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=86.39
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0309|0.1727|0.4033
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=72.53
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=82.45
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0262|0.1440|0.3374
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=66.49
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=76.43
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0268|0.1465|0.3415
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=58.49
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=70.33
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0310|0.1716|0.4025
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=35.90
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=59.75
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0308|0.1696|0.3931
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=20.03
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=45.32
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0360|0.1972|0.4513
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=19.68
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=27.71
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0371|0.1982|0.4494
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=10.97
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=17.19
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0388|0.2036|0.4434
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=12.29
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=11.63
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0280|0.1431|0.2942
+
+2023-01-15 14:03:32.278 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.2714936 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 22/50 2023-01-15 14:03:32.278 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.2714936 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.06
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=93.06
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=93.04
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0149|0.0901|0.2149
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=88.02
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=90.33
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0278|0.1583|0.3667
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=77.70
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=85.95
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0439|0.2426|0.5419
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=67.54
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=76.84
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0689|0.3717|0.8346
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=51.07
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=63.80
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.1075|0.5852|1.2868
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=19.92
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=40.68
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.1550|0.8189|1.7801
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=19.52
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=20.90
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.2385|1.2689|2.7322
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=11.75
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=10.81
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.2472|1.2844|2.7776
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=9.87
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=6.86
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.1975|1.0409|2.1121
+
+2023-01-15 14:03:32.747 dataset=cifar10 model=resnet18 epochs=200 lr_max=3.6340339 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 23/50 2023-01-15 14:03:32.747 dataset=cifar10 model=resnet18 epochs=200 lr_max=3.6340339 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.79
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=93.32
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=61.51
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.1120|0.6366|1.4951
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=87.93
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=62.34
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0965|0.5592|1.3330
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=76.80
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=57.01
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.1392|0.8093|1.9485
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=68.74
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=57.91
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0758|0.4343|1.0391
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=52.22
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=50.59
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0829|0.4694|1.0843
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=30.99
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=40.94
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0292|0.1581|0.3418
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=12.70
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=18.06
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0580|0.3073|0.6675
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=10.54
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=9.69
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0849|0.4006|0.7862
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=9.62
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=11.02
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0178|0.0765|0.1375
+
+2023-01-15 14:03:39.411 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.0599879 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 24/50 2023-01-15 14:03:39.411 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.0599879 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.20
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=92.40
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=92.65
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0109|0.0643|0.1603
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=84.95
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=88.92
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0226|0.1284|0.3213
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=70.59
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=84.40
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0323|0.1850|0.4607
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=50.61
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=72.81
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0550|0.3125|0.7541
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=30.16
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=59.32
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0749|0.4243|1.0002
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=24.30
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=45.31
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0816|0.4495|1.0440
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=18.38
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=28.99
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.1112|0.6028|1.3706
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=12.00
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=13.94
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.1354|0.7101|1.5158
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=8.81
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=10.16
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0916|0.4666|0.9614
+
+2023-01-15 14:03:40.684 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.3657674 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 25/50 2023-01-15 14:03:40.684 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.3657674 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.87
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=78.77
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=94.25
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0179|0.1004|0.2265
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=76.69
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=90.04
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0197|0.1063|0.2264
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=66.40
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=78.24
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0285|0.1519|0.3337
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=46.73
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=69.01
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0246|0.1277|0.2649
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=31.43
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=40.57
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0369|0.1948|0.4153
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=12.90
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=30.59
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0114|0.0565|0.1110
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=13.62
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=16.92
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0217|0.1112|0.2318
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=10.50
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=10.29
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0275|0.1370|0.2710
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.09
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=8.86
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0284|0.1437|0.2886
+
+2023-01-15 14:03:40.874 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.0761962 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 26/50 2023-01-15 14:03:40.874 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.0761962 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=83.92
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=77.97
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=78.00
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.1387|0.8203|2.0714
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=70.53
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=74.77
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.1430|0.8392|2.2068
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=61.54
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=67.28
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.1516|0.8881|2.2961
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=46.79
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=61.09
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.1512|0.8759|2.2100
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=43.23
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=51.33
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.1624|0.9359|2.3491
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=32.09
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=37.84
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.1780|0.9995|2.3781
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=22.65
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=30.22
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.1476|0.7993|1.8076
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=16.07
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=22.90
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.1432|0.7741|1.7234
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=12.76
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=13.53
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.1141|0.5940|1.2576
+
+2023-01-15 14:03:42.555 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.3667644 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 27/50 2023-01-15 14:03:42.555 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.3667644 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.43
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=91.97
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=93.57
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0104|0.0612|0.1518
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=85.12
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=91.34
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0207|0.1157|0.2688
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=73.38
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=85.64
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0402|0.2211|0.5110
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=58.41
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=76.37
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0612|0.3352|0.7620
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=33.97
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=62.27
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0849|0.4568|1.0113
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=17.32
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=47.30
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0904|0.4860|1.0611
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=14.87
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=23.56
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.1258|0.6570|1.4307
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=9.75
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=13.55
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0989|0.5108|1.0687
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.78
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=13.50
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0385|0.1999|0.4079
+
+2023-01-15 14:03:42.645 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.9603212 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 28/50 2023-01-15 14:03:42.645 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.9603212 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.41
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=93.05
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=93.52
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0155|0.0933|0.2228
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=88.11
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=91.20
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0280|0.1616|0.3735
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=79.08
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=86.96
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0504|0.2738|0.6106
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=52.76
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=79.25
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0777|0.4219|0.9190
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=40.59
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=63.18
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.1372|0.7432|1.6406
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=25.09
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=42.87
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.1892|1.0038|2.1562
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=15.89
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=26.66
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.2179|1.1333|2.3471
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=10.52
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=12.28
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.2772|1.4181|2.9094
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.17
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=9.82
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.1683|0.8561|1.6991
+
+2023-01-15 14:03:43.439 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.294968 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 29/50 2023-01-15 14:03:43.439 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.294968 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=87.47
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=83.41
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=84.83
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0713|0.3908|0.8718
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=74.37
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=82.95
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0701|0.3742|0.8357
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=62.83
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=80.38
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0705|0.3769|0.8519
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=53.66
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=75.60
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0778|0.4200|0.9310
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=43.88
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=72.69
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0829|0.4459|1.0106
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=29.84
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=64.62
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0856|0.4560|1.0178
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=26.58
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=54.16
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0980|0.5184|1.1280
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=17.89
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=33.14
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0935|0.4940|1.0588
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=11.66
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=18.12
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.1068|0.5592|1.1615
+
+2023-01-15 14:03:43.910 dataset=cifar10 model=resnet18 epochs=200 lr_max=4.9759851 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 30/50 2023-01-15 14:03:43.910 dataset=cifar10 model=resnet18 epochs=200 lr_max=4.9759851 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.79
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=93.35
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=90.34
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.1967|1.1863|2.9661
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=87.40
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=87.88
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.2506|1.4623|3.5540
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=81.13
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=83.21
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.3211|1.8404|4.2627
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=57.25
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=73.14
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.4525|2.4864|5.7130
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=40.48
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=56.02
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.5655|3.1636|7.1090
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=30.27
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=46.13
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.5677|3.0424|6.6761
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=12.11
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=27.22
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.7351|3.8659|8.3614
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=10.04
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=11.13
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.6404|3.3871|6.9998
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.01
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=9.55
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.2276|1.0334|1.9863
+
+2023-01-15 14:03:44.169 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.082242 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 31/50 2023-01-15 14:03:44.169 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.082242 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.31
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=90.19
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=93.15
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0142|0.0822|0.2093
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=70.67
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=89.99
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0196|0.1101|0.2570
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=68.68
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=85.26
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0217|0.1187|0.2656
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=20.47
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=76.27
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0225|0.1204|0.2687
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=34.37
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=63.05
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0228|0.1223|0.2666
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=16.01
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=38.08
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0235|0.1223|0.2608
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=15.98
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=22.36
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0314|0.1628|0.3471
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=7.67
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=13.65
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0068|0.0346|0.0711
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.55
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=10.26
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0201|0.1001|0.2015
+
+2023-01-15 14:10:48.129 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.5684879 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 32/50 2023-01-15 14:10:48.129 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.5684879 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.97
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=93.25
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=92.95
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0150|0.0829|0.1891
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=85.54
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=88.91
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0203|0.1070|0.2390
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=73.82
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=80.78
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0267|0.1378|0.2946
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=40.09
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=69.83
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0256|0.1314|0.2708
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=36.02
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=42.29
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0288|0.1490|0.3136
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=22.19
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=36.52
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0218|0.1114|0.2326
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=13.46
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=17.15
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0423|0.2230|0.4692
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=9.86
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=11.89
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0321|0.1666|0.3361
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=9.52
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=8.52
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0266|0.1254|0.2364
+
+2023-01-15 14:10:48.585 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.2994383 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 33/50 2023-01-15 14:10:48.585 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.2994383 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.53
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=92.49
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=93.49
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0116|0.0671|0.1664
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=86.08
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=89.79
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0231|0.1313|0.3042
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=73.98
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=86.97
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0343|0.1898|0.4342
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=50.42
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=77.21
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0625|0.3397|0.7717
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=37.84
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=64.62
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0801|0.4304|0.9613
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=18.16
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=36.27
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.1376|0.7360|1.6001
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=13.26
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=25.37
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.1551|0.8584|1.9313
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=10.21
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=11.92
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.2050|1.0517|2.1667
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=8.67
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=13.00
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.1525|0.7992|1.7110
+
+2023-01-15 14:36:41.247 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.0504226 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 34/50 2023-01-15 14:36:41.247 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.0504226 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=88.66
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=83.28
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=86.11
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0307|0.1839|0.4770
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=73.12
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=80.47
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0299|0.1807|0.4615
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=64.04
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=75.67
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0264|0.1532|0.3860
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=30.69
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=64.80
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0309|0.1810|0.4470
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=32.65
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=54.82
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0320|0.1867|0.4798
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=22.23
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=35.61
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0310|0.1799|0.4598
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=21.32
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=31.03
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0226|0.1307|0.3296
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=13.47
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=17.37
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0257|0.1356|0.2950
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=9.32
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=10.06
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0299|0.1508|0.3191
+
+2023-01-15 14:36:41.623 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.1674753 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 35/50 2023-01-15 14:36:41.623 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.1674753 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=89.05
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=84.55
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=86.48
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0287|0.1616|0.3840
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=63.51
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=82.49
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0237|0.1328|0.3251
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=73.59
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=77.81
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0233|0.1274|0.3027
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=52.01
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=70.55
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0222|0.1224|0.2917
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=43.83
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=55.02
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0283|0.1536|0.3561
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=21.32
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=38.04
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0340|0.1847|0.4508
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=15.05
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=28.99
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0273|0.1467|0.3331
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=13.14
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=11.70
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0368|0.1938|0.4131
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=9.55
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=9.79
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0258|0.1325|0.2754
+
+2023-01-15 15_02_57.115 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.7863613 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 36/50 2023-01-15 15_02_57.115 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.7863613 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=88.69
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=84.80
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=86.93
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0595|0.3111|0.6806
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=74.06
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=85.33
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0607|0.3194|0.6849
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=67.29
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=83.64
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0598|0.3183|0.6905
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=54.71
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=81.33
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0619|0.3231|0.7096
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=42.15
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=75.36
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0704|0.3712|0.8020
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=27.20
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=67.64
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0755|0.3924|0.8498
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=23.20
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=59.87
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0828|0.4340|0.9428
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=14.17
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=32.34
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.1000|0.5155|1.0757
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=9.64
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=14.87
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.1191|0.6158|1.2837
+
+2023-01-15 15_02_58.608 dataset=cifar10 model=resnet18 epochs=200 lr_max=1.42443 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 37/50 2023-01-15 15_02_58.608 dataset=cifar10 model=resnet18 epochs=200 lr_max=1.42443 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=88.73
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=82.61
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=85.70
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0367|0.2020|0.4591
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=70.25
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=82.29
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0328|0.1773|0.3934
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=64.75
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=78.92
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0297|0.1613|0.3601
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=48.63
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=70.12
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0323|0.1746|0.3946
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=35.13
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=63.61
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0301|0.1645|0.3813
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=32.59
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=51.82
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0296|0.1590|0.3649
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=17.72
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=37.41
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0272|0.1461|0.3246
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=12.58
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=20.10
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0372|0.2022|0.4541
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=9.86
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=9.91
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0211|0.1111|0.2331
+
+2023-01-15 15_20_55.687 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.9131416 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 38/50 2023-01-15 15_20_55.687 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.9131416 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.64
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=92.08
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=93.36
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0148|0.0902|0.2150
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=85.58
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=91.02
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0278|0.1544|0.3529
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=74.96
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=86.87
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0450|0.2472|0.5714
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=51.02
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=81.05
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0559|0.3061|0.6942
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=32.46
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=69.16
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0717|0.3977|0.8987
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=20.64
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=37.14
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0902|0.4816|1.0670
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=18.54
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=23.04
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0916|0.4739|1.0143
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=12.60
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=12.80
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0845|0.4358|0.9015
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=9.94
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=8.88
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0244|0.1215|0.2354
+
+2023-01-15 16_08_49.150 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.7613452 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 39/50 2023-01-15 16_08_49.150 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.7613452 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=96.04
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=93.73
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=93.12
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0178|0.1006|0.2441
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=86.40
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=87.45
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0259|0.1427|0.3252
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=66.74
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=83.11
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0302|0.1587|0.3393
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=47.82
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=61.19
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0360|0.1856|0.3920
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=34.49
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=45.74
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0300|0.1540|0.3211
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=20.75
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=23.76
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0290|0.1511|0.3188
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=12.84
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=15.51
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0274|0.1411|0.2878
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=9.72
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=11.14
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0207|0.0968|0.1835
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.12
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=11.48
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0055|0.0241|0.0442
+
+2023-01-15 16_08_49.235 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.2923595 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 40/50 2023-01-15 16_08_49.235 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.2923595 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=88.72
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=84.81
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=87.37
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0361|0.2020|0.4941
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=76.85
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=83.46
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0324|0.1802|0.4304
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=65.30
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=77.45
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0346|0.1924|0.4434
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=48.37
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=67.39
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0337|0.1837|0.4160
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=28.69
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=58.10
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0342|0.1889|0.4359
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=30.62
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=47.55
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0364|0.2021|0.4558
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=16.28
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=26.69
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0421|0.2311|0.5238
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=15.40
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=16.61
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0367|0.1926|0.4132
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.65
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=12.08
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0296|0.1526|0.3204
+
+2023-01-15 16_08_49.381 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.2890736 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 41/50 2023-01-15 16_08_49.381 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.2890736 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.45
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=76.99
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=93.78
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0127|0.0699|0.1630
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=35.67
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=91.03
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0168|0.0929|0.2200
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=31.97
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=82.61
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0186|0.0987|0.2145
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=37.70
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=69.22
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0268|0.1402|0.3005
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=11.77
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=48.44
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0269|0.1392|0.2894
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=16.16
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=28.43
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0407|0.2154|0.4583
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=10.94
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=16.52
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0241|0.1254|0.2629
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=9.86
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=10.76
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0201|0.1002|0.2028
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=7.96
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=10.95
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0070|0.0316|0.0579
+
+2023-01-15 16_09_27.445 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.3577887 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 42/50 2023-01-15 16_09_27.445 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.3577887 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=87.54
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=83.34
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=85.11
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0704|0.3742|0.8279
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=78.64
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=83.79
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0734|0.3935|0.8668
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=64.81
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=79.42
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0777|0.4220|0.9279
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=56.79
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=76.63
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0777|0.4146|0.9161
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=45.68
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=68.79
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0909|0.4855|1.0733
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=31.52
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=58.96
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0912|0.4822|1.0465
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=15.07
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=47.82
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0999|0.5176|1.1317
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=20.28
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=27.40
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.1188|0.6274|1.3596
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.61
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=17.05
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.1126|0.5685|1.1901
+
+2023-01-15 16_10_34.353 dataset=cifar10 model=resnet18 epochs=200 lr_max=1.600663 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 43/50 2023-01-15 16_10_34.353 dataset=cifar10 model=resnet18 epochs=200 lr_max=1.600663 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=86.90
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=81.10
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=85.11
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.1031|0.5363|1.1566
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=71.23
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=84.46
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.1021|0.5354|1.1556
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=52.57
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=82.31
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.1054|0.5457|1.1597
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=43.42
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=80.02
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.1147|0.5966|1.2830
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=45.56
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=76.33
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.1208|0.6376|1.3644
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=31.32
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=68.51
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.1428|0.7533|1.6231
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=22.49
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=60.55
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.1322|0.6827|1.4357
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=13.32
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=37.47
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.1613|0.8314|1.7075
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.79
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=15.47
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.2477|1.2798|2.6690
+
+2023-01-15 16_10_34.615 dataset=cifar10 model=resnet18 epochs=200 lr_max=1.3470811 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 44/50 2023-01-15 16_10_34.615 dataset=cifar10 model=resnet18 epochs=200 lr_max=1.3470811 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.75
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=92.38
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=81.77
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0392|0.2232|0.5417
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=86.30
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=89.20
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0250|0.1370|0.3063
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=61.09
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=68.72
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0456|0.2446|0.5434
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=54.54
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=65.79
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0351|0.1822|0.3815
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=34.18
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=52.22
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0245|0.1243|0.2524
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=19.02
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=31.03
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0376|0.2005|0.4306
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=12.25
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=21.32
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0180|0.0893|0.1791
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=10.25
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=12.51
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0183|0.0905|0.1783
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=9.84
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=9.45
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0065|0.0285|0.0504
+
+2023-01-15 16_10_35.215 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.812511 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 45/50 2023-01-15 16_10_35.215 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.812511 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=87.94
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=83.83
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=85.96
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0739|0.3914|0.8541
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=77.52
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=83.40
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0798|0.4236|0.9120
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=65.14
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=82.24
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0803|0.4243|0.9080
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=54.68
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=78.31
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0849|0.4549|0.9779
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=44.02
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=74.02
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0862|0.4592|0.9942
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=36.60
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=63.61
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0956|0.4993|1.0737
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=29.64
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=52.95
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.1082|0.5646|1.1979
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=18.40
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=23.06
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.1347|0.6927|1.4281
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=11.56
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=18.69
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.1289|0.6535|1.3433
+
+2023-01-15 16_34_05.843 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.2067711 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 46/50 2023-01-15 16_34_05.843 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.2067711 model_width=64 l2_reg=0.0 sam_rho=0.0 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=87.28
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=80.11
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=84.41
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0411|0.2337|0.5562
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=71.33
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=80.24
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0354|0.2088|0.5141
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=59.31
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=71.00
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0433|0.2514|0.6277
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=50.03
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=64.83
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0397|0.2239|0.5293
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=22.79
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=56.63
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0377|0.2098|0.4914
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=21.79
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=36.65
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0488|0.2745|0.6607
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=16.36
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=19.73
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0513|0.2717|0.5866
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=10.43
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=13.95
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0511|0.2727|0.5767
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.67
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=9.89
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0386|0.1939|0.3979
+
+2023-01-15 16_50_56.833 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.0633788 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 47/50 2023-01-15 16_50_56.833 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.0633788 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=94.91
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=92.56
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=92.96
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0114|0.0673|0.1692
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=86.14
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=89.36
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0214|0.1215|0.2985
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=75.21
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=82.59
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0350|0.1983|0.4774
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=43.35
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=72.65
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0535|0.3021|0.7144
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=35.92
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=53.41
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0798|0.4434|1.0449
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=29.94
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=36.98
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.1070|0.5878|1.3692
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=10.61
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=19.61
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.1467|0.7902|1.7324
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=12.36
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=12.39
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.1419|0.7352|1.5666
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.30
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=9.79
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.1550|0.8359|1.7724
+
+2023-01-15 16_50_57.286 dataset=cifar10 model=resnet18 epochs=200 lr_max=3.4723207 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 48/50 2023-01-15 16_50_57.286 dataset=cifar10 model=resnet18 epochs=200 lr_max=3.4723207 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.95
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=70.74
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=91.32
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0151|0.0834|0.1900
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=37.11
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=90.47
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0200|0.1096|0.2440
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=55.20
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=84.64
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0224|0.1196|0.2577
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=40.89
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=78.79
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0216|0.1096|0.2217
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=31.88
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=61.86
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0195|0.0972|0.1977
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=26.29
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=42.31
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0154|0.0766|0.1508
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=9.97
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=24.26
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0059|0.0282|0.0526
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=9.57
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=13.90
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0087|0.0384|0.0689
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.53
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=9.16
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0081|0.0329|0.0552
+
+2023-01-15 16_50_57.626 dataset=cifar10 model=resnet18 epochs=200 lr_max=1.4257862 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth ========
+[MODEL] 49/50 2023-01-15 16_50_57.626 dataset=cifar10 model=resnet18 epochs=200 lr_max=1.4257862 model_width=64 l2_reg=0.0 sam_rho=0.1 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=True randaug=True seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=95.45
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=92.70
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=93.43
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0135|0.0798|0.1913
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=83.55
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=91.02
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0228|0.1308|0.3001
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=74.03
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=86.89
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.0360|0.1982|0.4614
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=47.08
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=78.06
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.0550|0.3101|0.7242
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=40.93
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=65.45
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.0703|0.3874|0.8751
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=24.25
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=45.14
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.0878|0.4737|1.0510
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=14.78
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=24.37
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.0649|0.3469|0.7687
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=11.35
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=13.10
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.0169|0.0887|0.1925
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=10.76
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=10.45
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0034|0.0152|0.0289
+
+2023-01-15 17_22_34.404 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.0551324 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth ========
+[MODEL] 50/50 2023-01-15 17_22_34.404 dataset=cifar10 model=resnet18 epochs=200 lr_max=0.0551324 model_width=64 l2_reg=0.0 sam_rho=0.05 batch_size=128 frac_train=1 p_label_noise=0.0 lr_schedule=cyclic augm=False randaug=False seed=0 epoch=200.pth
+[BASE] Ratio=0.0 Params=11172170 Eval=BeforePruning [RESULT] TestAcc=85.15
+Model folding complete (with BN folding).
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterPruning [RESULT] TestAcc=81.70
+[BASE] Ratio=0.1 Params=9016748 Eval=AfterRepair [RESULT] TestAcc=82.18
+[SHARPNESS] Ratio=0.1 Method=fold Sharpness=0.0849|0.4939|1.2671
+Model folding complete (with BN folding).
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterPruning [RESULT] TestAcc=77.36
+[BASE] Ratio=0.2 Params=7120930 Eval=AfterRepair [RESULT] TestAcc=78.55
+[SHARPNESS] Ratio=0.2 Method=fold Sharpness=0.0908|0.5280|1.3348
+Model folding complete (with BN folding).
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterPruning [RESULT] TestAcc=69.48
+[BASE] Ratio=0.3 Params=5458614 Eval=AfterRepair [RESULT] TestAcc=71.75
+[SHARPNESS] Ratio=0.3 Method=fold Sharpness=0.1121|0.6668|1.7206
+Model folding complete (with BN folding).
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterPruning [RESULT] TestAcc=55.66
+[BASE] Ratio=0.4 Params=4008346 Eval=AfterRepair [RESULT] TestAcc=63.49
+[SHARPNESS] Ratio=0.4 Method=fold Sharpness=0.1186|0.6808|1.7369
+Model folding complete (with BN folding).
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterPruning [RESULT] TestAcc=43.66
+[BASE] Ratio=0.5 Params=2796714 Eval=AfterRepair [RESULT] TestAcc=54.17
+[SHARPNESS] Ratio=0.5 Method=fold Sharpness=0.1181|0.6652|1.6824
+Model folding complete (with BN folding).
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterPruning [RESULT] TestAcc=40.57
+[BASE] Ratio=0.6 Params=1775948 Eval=AfterRepair [RESULT] TestAcc=46.71
+[SHARPNESS] Ratio=0.6 Method=fold Sharpness=0.1134|0.6458|1.5603
+Model folding complete (with BN folding).
+[BASE] Ratio=0.7 Params=996738 Eval=AfterPruning [RESULT] TestAcc=21.64
+[BASE] Ratio=0.7 Params=996738 Eval=AfterRepair [RESULT] TestAcc=27.21
+[SHARPNESS] Ratio=0.7 Method=fold Sharpness=0.1289|0.6898|1.5891
+Model folding complete (with BN folding).
+[BASE] Ratio=0.8 Params=443862 Eval=AfterPruning [RESULT] TestAcc=14.19
+[BASE] Ratio=0.8 Params=443862 Eval=AfterRepair [RESULT] TestAcc=18.89
+[SHARPNESS] Ratio=0.8 Method=fold Sharpness=0.1125|0.6183|1.4241
+Model folding complete (with BN folding).
+[BASE] Ratio=0.9 Params=110202 Eval=AfterPruning [RESULT] TestAcc=12.36
+[BASE] Ratio=0.9 Params=110202 Eval=AfterRepair [RESULT] TestAcc=12.50
+[SHARPNESS] Ratio=0.9 Method=fold Sharpness=0.0996|0.5267|1.1347

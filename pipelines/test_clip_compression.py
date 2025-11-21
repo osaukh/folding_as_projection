@@ -14,6 +14,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from models.clip_vit import CLIPViT_B32
 from compression.fold import CLIPViT_ModelFolding
 from compression.mag_prune import CLIPViT_MagnitudePruning
+
 from utils.eval_utils import test, count_parameters, get_outputs
 from utils.tune_utils import retune_layernorm
 
@@ -113,10 +114,10 @@ def main():
             acc = test(model, val_loader, device)
             log_line(ratio, "PRUNE", params=pruned_params, acc=f"{acc:.2f}")
 
-            # Retune LayerNorm
-            retune_layernorm(model, train_loader, device=device, lr=5e-5)
-            acc = test(model, val_loader, device)
-            log_line(ratio, "REPAIR", acc=f"{acc:.2f}")
+            # # Retune LayerNorm
+            # retune_layernorm(model, train_loader, device=device, lr=5e-5)
+            # acc = test(model, val_loader, device)
+            # log_line(ratio, "REPAIR", acc=f"{acc:.2f}")
 
             # # Functional deviation
             # fd = torch.norm(orig_outputs - get_outputs(model.eval(), val_loader, device), dim=1).mean().item()

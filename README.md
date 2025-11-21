@@ -53,7 +53,10 @@ CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_resnet_compression --ckpt_dir .
 
 *PreActResNet18:*
 ```
-CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_prect_resnet_compression --ckpt_dir ../checkpoints/preactresnet18 --method fold --epochs 5
+CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_preact_resnet_compression --ckpt_dir ../checkpoints/preactresnet18 --method fold --epochs 5
+CUDA_VISIBLE_DEVICES=7 python3 -m pipelines.test_preact_resnet_sharpness --ckpt_dir ../checkpoints/preactresnet18 --method mag-l2 --sharp-layer-pattern "visual.transformer.resblocks.11" >>output/preactresnet18/mag-l2-sharpness
+CUDA_VISIBLE_DEVICES=3 python3 -m pipelines.test_preact_resnet_zeroshot --ckpt_dir ../checkpoints/preactresnet18 --method mag-l2 >>output/preactresnet18/mag-l2-zeroshot
+CUDA_VISIBLE_DEVICES=1 python3 -m pipelines.test_preact_resnet_compression --ckpt_dir ../checkpoints/preactresnet18 --method fisher --epochs 0 >>output/preactresnet18/fisher
 ```
 *ViT experiments:*
 ```
@@ -62,6 +65,8 @@ CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_vit_compression --ckpt_dir ../c
 *CLIP model soups:*
 ```
 CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_clip_compression --ckpt_dir ../checkpoints/clipvit-b32-model-soups --method fold --epochs 5
+CUDA_VISIBLE_DEVICES=7 python3 -m pipelines.test_clip_sharpness --ckpt_dir ../checkpoints/clipvit-b32-model-soups --method mag-l2 >>output/clip/mag-l2-sharpness
+CUDA_VISIBLE_DEVICES=2 python3 -m pipelines.test_clip_zeroshot --ckpt_dir ../checkpoints/clipvit-b32-model-soups --method mag-l2 >>output/clip/mag-l2-zeroshot
 ```
 
 ## Reproducing Plots
