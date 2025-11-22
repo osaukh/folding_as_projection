@@ -1,0 +1,131 @@
+✅ Vision + classification head loaded
+
+=== Evaluation BEFORE compression ===
+Original Parameters: 151790313
+
+=== Resource usage: CLIP ViT-B/32 (original) ===
+Latency: 22.154 ms / batch, 0.6923 ms / image
+FLOPs: 2946.76 MFLOPs / image (thop: OK)
+Peak memory (forward): 684.18 MB
+
+================================================================================
+=== Method: fold ===
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_ModelFolding compression...
+
+>>> Compression stats for method 'fold':
+Compression time: 165.181 s
+Peak memory during compression: 683.16 MB
+
+=== Evaluation AFTER compression (before LN re-tune) ===
+Top-1 Accuracy: 42.02%
+Pruned Parameters: 140447253
+Compression Ratio: 7.47%
+
+=== Resource usage: CLIP ViT-B/32 (compressed, method=fold, before LN re-tune) ===
+Latency: 17.312 ms / batch, 0.5410 ms / image
+FLOPs: 2379.98 MFLOPs / image (thop: OK)
+Peak memory (forward): 637.88 MB
+
+================================================================================
+=== Method: mag ===
+✅ Vision + classification head loaded
+[INFO] Starting CLIPViT_MagnitudePruning compression...
+
+>>> Compression stats for method 'mag':
+Compression time: 0.255 s
+Peak memory during compression: 625.61 MB
+
+=== Evaluation AFTER compression (before LN re-tune) ===
+Top-1 Accuracy: 37.50%
+Pruned Parameters: 140447253
+Compression Ratio: 7.47%
+
+=== Resource usage: CLIP ViT-B/32 (compressed, method=mag, before LN re-tune) ===
+Latency: 17.344 ms / batch, 0.5420 ms / image
+FLOPs: 2379.98 MFLOPs / image (thop: OK)
+Peak memory (forward): 637.88 MB
+
+================================================================================
+PER-LAYER COMPARISON: fold vs mag (CLIP ViT-B/32)
+================================================================================
+Layer                                                        params_fold  params_mag      Δp      FLOPs_fold       FLOPs_mag          ΔF      Act_fold       Act_mag          Δa       NZ_fold        NZ_mag         Δnz
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+classification_head                                               513000      513000       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.0.attn.out_proj                             262656      262656       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.0.mlp.c_fc                                 1050624     1050624       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.0.mlp.c_proj                               1049088     1049088       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.1.attn.out_proj                             262656      262656       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.1.mlp.c_fc                                 1050624     1050624       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.1.mlp.c_proj                               1049088     1049088       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.10.attn.out_proj                            262656      262656       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.10.mlp.c_fc                                1050624     1050624       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.10.mlp.c_proj                              1049088     1049088       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.11.attn.out_proj                            262656      262656       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.11.mlp.c_fc                                1050624     1050624       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.11.mlp.c_proj                              1049088     1049088       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.2.attn.out_proj                             262656      262656       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.2.mlp.c_fc                                 1050624     1050624       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.2.mlp.c_proj                               1049088     1049088       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.3.attn.out_proj                             262656      262656       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.3.mlp.c_fc                                 1050624     1050624       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.3.mlp.c_proj                               1049088     1049088       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.4.attn.out_proj                             262656      262656       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.4.mlp.c_fc                                 1050624     1050624       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.4.mlp.c_proj                               1049088     1049088       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.5.attn.out_proj                             262656      262656       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.5.mlp.c_fc                                 1050624     1050624       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.5.mlp.c_proj                               1049088     1049088       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.6.attn.out_proj                             262656      262656       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.6.mlp.c_fc                                 1050624     1050624       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.6.mlp.c_proj                               1049088     1049088       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.7.attn.out_proj                             262656      262656       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.7.mlp.c_fc                                 1050624     1050624       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.7.mlp.c_proj                               1049088     1049088       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.8.attn.out_proj                             262656      262656       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.8.mlp.c_fc                                 1050624     1050624       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.8.mlp.c_proj                               1049088     1049088       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.9.attn.out_proj                             262656      262656       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.9.mlp.c_fc                                 1050624     1050624       0               0               0           0             0             0           0             0             0           0
+transformer.resblocks.9.mlp.c_proj                               1049088     1049088       0               0               0           0             0             0           0             0             0           0
+visual.conv1                                                     2359296     2359296       0       115605504       115605504           0         37632         37632           0         37632         37632           0
+visual.transformer.resblocks.0.attn.out_proj                      590592      590592       0               0               0           0             0             0           0             0             0           0
+visual.transformer.resblocks.0.mlp.c_fc                          1889433     1889433       0        94348800        94348800           0        122850        122850           0        122850        122850           0
+visual.transformer.resblocks.0.mlp.c_proj                        1887744     1887744       0        94348800        94348800           0         38400         38400           0         38400         38400           0
+visual.transformer.resblocks.1.attn.out_proj                      590592      590592       0               0               0           0             0             0           0             0             0           0
+visual.transformer.resblocks.1.mlp.c_fc                          1889433     1889433       0        94348800        94348800           0        122850        122850           0        122850        122850           0
+visual.transformer.resblocks.1.mlp.c_proj                        1887744     1887744       0        94348800        94348800           0         38400         38400           0         38400         38400           0
+visual.transformer.resblocks.10.attn.out_proj                     590592      590592       0               0               0           0             0             0           0             0             0           0
+visual.transformer.resblocks.10.mlp.c_fc                         1889433     1889433       0        94348800        94348800           0        122850        122850           0        122850        122850           0
+visual.transformer.resblocks.10.mlp.c_proj                       1887744     1887744       0        94348800        94348800           0         38400         38400           0         38400         38400           0
+visual.transformer.resblocks.11.attn.out_proj                     590592      590592       0               0               0           0             0             0           0             0             0           0
+visual.transformer.resblocks.11.mlp.c_fc                         1889433     1889433       0        94348800        94348800           0        122850        122850           0        122850        122850           0
+visual.transformer.resblocks.11.mlp.c_proj                       1887744     1887744       0        94348800        94348800           0         38400         38400           0         38400         38400           0
+visual.transformer.resblocks.2.attn.out_proj                      590592      590592       0               0               0           0             0             0           0             0             0           0
+visual.transformer.resblocks.2.mlp.c_fc                          1889433     1889433       0        94348800        94348800           0        122850        122850           0        122850        122850           0
+visual.transformer.resblocks.2.mlp.c_proj                        1887744     1887744       0        94348800        94348800           0         38400         38400           0         38400         38400           0
+visual.transformer.resblocks.3.attn.out_proj                      590592      590592       0               0               0           0             0             0           0             0             0           0
+visual.transformer.resblocks.3.mlp.c_fc                          1889433     1889433       0        94348800        94348800           0        122850        122850           0        122850        122850           0
+visual.transformer.resblocks.3.mlp.c_proj                        1887744     1887744       0        94348800        94348800           0         38400         38400           0         38400         38400           0
+visual.transformer.resblocks.4.attn.out_proj                      590592      590592       0               0               0           0             0             0           0             0             0           0
+visual.transformer.resblocks.4.mlp.c_fc                          1889433     1889433       0        94348800        94348800           0        122850        122850           0        122850        122850           0
+visual.transformer.resblocks.4.mlp.c_proj                        1887744     1887744       0        94348800        94348800           0         38400         38400           0         38400         38400           0
+visual.transformer.resblocks.5.attn.out_proj                      590592      590592       0               0               0           0             0             0           0             0             0           0
+visual.transformer.resblocks.5.mlp.c_fc                          1889433     1889433       0        94348800        94348800           0        122850        122850           0        122850        122850           0
+visual.transformer.resblocks.5.mlp.c_proj                        1887744     1887744       0        94348800        94348800           0         38400         38400           0         38400         38400           0
+visual.transformer.resblocks.6.attn.out_proj                      590592      590592       0               0               0           0             0             0           0             0             0           0
+visual.transformer.resblocks.6.mlp.c_fc                          1889433     1889433       0        94348800        94348800           0        122850        122850           0        122850        122850           0
+visual.transformer.resblocks.6.mlp.c_proj                        1887744     1887744       0        94348800        94348800           0         38400         38400           0         38400         38400           0
+visual.transformer.resblocks.7.attn.out_proj                      590592      590592       0               0               0           0             0             0           0             0             0           0
+visual.transformer.resblocks.7.mlp.c_fc                          1889433     1889433       0        94348800        94348800           0        122850        122850           0        122850        122850           0
+visual.transformer.resblocks.7.mlp.c_proj                        1887744     1887744       0        94348800        94348800           0         38400         38400           0         38400         38400           0
+visual.transformer.resblocks.8.attn.out_proj                      590592      590592       0               0               0           0             0             0           0             0             0           0
+visual.transformer.resblocks.8.mlp.c_fc                          1889433     1889433       0        94348800        94348800           0        122850        122850           0        122850        122850           0
+visual.transformer.resblocks.8.mlp.c_proj                        1887744     1887744       0        94348800        94348800           0         38400         38400           0         38400         38400           0
+visual.transformer.resblocks.9.attn.out_proj                      590592      590592       0               0               0           0             0             0           0             0             0           0
+visual.transformer.resblocks.9.mlp.c_fc                          1889433     1889433       0        94348800        94348800           0        122850        122850           0        122850        122850           0
+visual.transformer.resblocks.9.mlp.c_proj                        1887744     1887744       0        94348800        94348800           0         38400         38400           0         38400         38400           0
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTALS                                                          83633940    83633940       0      2379976704      2379976704           0       1972632       1972632           0       1972632       1972632           0
+
+[OK] Parameters, FLOPs, activations, and effective activations are exactly matched globally for CLIP ViT-B/32.

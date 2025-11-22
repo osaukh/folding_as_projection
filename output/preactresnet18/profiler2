@@ -1,0 +1,90 @@
+Files already downloaded and verified
+Files already downloaded and verified
+=== Evaluation BEFORE compression ===
+Top-1 Accuracy: 95.46%
+Original Parameters: 11172170
+
+=== Resource usage: PreActResNet18 (original) ===
+Latency: 3.683 ms / batch, 0.0288 ms / image
+FLOPs: 557.65 MFLOPs / image (thop: OK)
+Peak memory (forward): 214.30 MB
+
+================================================================================
+=== Method: fold ===
+Model folding complete (with BN folding).
+
+>>> Compression stats for method 'fold':
+Compression time: 7.224 s
+Peak memory during compression: 157.47 MB
+
+=== Evaluation AFTER compression (before REPAIR) ===
+Top-1 Accuracy: 58.29%
+Parameters: 4008346
+Compression Ratio: 64.12%
+
+=== Resource usage: PreActResNet18 (compressed, method=fold, before REPAIR) ===
+Latency: 3.163 ms / batch, 0.0247 ms / image
+FLOPs: 199.05 MFLOPs / image (thop: OK)
+Peak memory (forward): 170.53 MB
+
+[INFO] Re-tuning BatchNorm parameters...
+
+=== Evaluation AFTER compression (after REPAIR) ===
+Top-1 Accuracy: 77.02%
+Parameters: 4008346
+Compression Ratio: 64.12%
+
+================================================================================
+=== Method: mag ===
+
+>>> Compression stats for method 'mag':
+Compression time: 2.193 s
+Peak memory during compression: 115.22 MB
+
+=== Evaluation AFTER compression (before REPAIR) ===
+Top-1 Accuracy: 11.00%
+Parameters: 4008346
+Compression Ratio: 64.12%
+
+=== Resource usage: PreActResNet18 (compressed, method=mag, before REPAIR) ===
+Latency: 3.136 ms / batch, 0.0245 ms / image
+FLOPs: 199.05 MFLOPs / image (thop: OK)
+Peak memory (forward): 213.82 MB
+
+[INFO] Re-tuning BatchNorm parameters...
+
+=== Evaluation AFTER compression (after REPAIR) ===
+Top-1 Accuracy: 51.52%
+Parameters: 4008346
+Compression Ratio: 64.12%
+
+================================================================================
+PER-LAYER COMPARISON: fold vs mag
+================================================================================
+Layer                                    params_fold  params_mag      Δp    FLOPs_fold     FLOPs_mag        ΔF    act_fold     act_mag        Δa     nz_fold      nz_mag       Δnz
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+conv1                                           1026        1026       0       1050624       1050624         0       38912       38912         0       38912       38912         0
+layer1.0.conv1                                 12996       12996       0      13307904      13307904         0       38912       38912         0       38912       38912         0
+layer1.0.conv2                                 12996       12996       0      13307904      13307904         0       38912       38912         0       38912       38912         0
+layer1.1.conv1                                 12996       12996       0      13307904      13307904         0       38912       38912         0       38912       38912         0
+layer1.1.conv2                                 12996       12996       0      13307904      13307904         0       38912       38912         0       38912       38912         0
+layer2.0.conv1                                 25992       25992       0       6653952       6653952         0       19456       19456         0       19456       19456         0
+layer2.0.conv2                                 51984       51984       0      13307904      13307904         0       19456       19456         0       19456       19456         0
+layer2.0.shortcut.0                             2888        2888       0        739328        739328         0       19456       19456         0       19456       19456         0
+layer2.1.conv1                                 51984       51984       0      13307904      13307904         0       19456       19456         0       19456       19456         0
+layer2.1.conv2                                 51984       51984       0      13307904      13307904         0       19456       19456         0       19456       19456         0
+layer3.0.conv1                                104652      104652       0       6697728       6697728         0        9792        9792         0        9792        9792         0
+layer3.0.conv2                                210681      210681       0      13483584      13483584         0        9792        9792         0        9792        9792         0
+layer3.0.shortcut.0                            11628       11628       0        744192        744192         0        9792        9792         0        9792        9792         0
+layer3.1.conv1                                210681      210681       0      13483584      13483584         0        9792        9792         0        9792        9792         0
+layer3.1.conv2                                210681      210681       0      13483584      13483584         0        9792        9792         0        9792        9792         0
+layer4.0.conv1                                422739      422739       0       6763824       6763824         0        4912        4912         0        4912        4912         0
+layer4.0.conv2                                848241      848241       0      13571856      13571856         0        4912        4912         0        4912        4912         0
+layer4.0.shortcut.0                            46971       46971       0        751536        751536         0        4912        4912         0        4912        4912         0
+layer4.1.conv1                                848241      848241       0      13571856      13571856         0        4912        4912         0        4912        4912         0
+layer4.1.conv2                                848241      848241       0      13571856      13571856         0        4912        4912         0        4912        4912         0
+linear                                          3080        3080       0          3070          3070         0          10          10         0          10          10         0
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTALS                                       4003678     4003678       0     197725902     197725902         0      365370      365370         0      365370      365370         0
+
+[OK] Parameters, FLOPs, activations, and effective activations are exactly matched globally.
