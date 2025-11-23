@@ -49,6 +49,7 @@ Logs are automatically stored in the `output` folder.
 CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_resnet_compression --ckpt_dir ../checkpoints/resnet18/adam --method fold
 CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_resnet_compression --ckpt_dir ../checkpoints/resnet18/adam --method mag-l1
 CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_resnet_compression --ckpt_dir ../checkpoints/resnet18/adam --method mag-l2
+CUDA_VISIBLE_DEVICES=3 python3 -m pipelines.test_resnet_sharpness --ckpt_dir ../checkpoints/resnet18/sgd --method mag-l1 >>output/resnet18/sgd-mag-l1-sharpness
 ```
 
 *PreActResNet18:*
