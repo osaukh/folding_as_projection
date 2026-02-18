@@ -1,6 +1,6 @@
 # Folding as Projection
 
-This repository contains code and experiments for exploring **model compression through projection-based folding**.  
+This repository contains code and experiments for exploring **model compression through projection-based folding**. 
 
 ## Checkpoints
 
@@ -70,3 +70,11 @@ CUDA_VISIBLE_DEVICES=0 python3 -m pipelines.test_clip_zeroshot --ckpt_dir ../che
 - Full experiment logs are available in the `output` folder.
 - Use the Jupyter notebooks in `notebooks` to reproduce the plots shown in the paper.
 
+## Publication
+```bibtex
+@inproceedings{saukh2026cutless,
+  title     = {Cut Less, Fold More: Model Compression through the Lens of Projection Geometry},
+  author    = {Saukh, Olga and Wang, Dong and {\v{S}}iki{\'c}, Haris and Cheng, Yun and Thiele, Lothar},
+  booktitle = {Proceedings of the International Conference on Learning Representations (ICLR)},
+  year      = {2026}
+}
